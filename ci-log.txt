@@ -1,0 +1,1556 @@
+e2e	Set up job	﻿2026-11-10T17:20:04.2108255Z Current runner version: '2.338.2'
+e2e	Set up job	2026-11-10T17:20:04.2132059Z ##[group]Runner Image Provisioner
+e2e	Set up job	2026-11-10T17:20:04.2134034Z Hosted Compute Agent
+e2e	Set up job	2026-11-10T17:20:04.2135701Z Version: 20261028.624
+e2e	Set up job	2026-11-10T17:20:04.2136086Z Commit: 54898b74c23fde5556c9b3c3a2290865feef0dfe
+e2e	Set up job	2026-11-10T17:20:04.2139122Z Build Date: 2026-10-28T21:51:42Z
+e2e	Set up job	2026-11-10T17:20:04.2140419Z Worker ID: {0f11aa51-c442-4292-b3a3-865f974413c1}
+e2e	Set up job	2026-11-10T17:20:04.2141369Z Region: westus3
+e2e	Set up job	2026-11-10T17:20:04.2143094Z Cloud: Azure
+e2e	Set up job	2026-11-10T17:20:04.2143436Z ##[endgroup]
+e2e	Set up job	2026-11-10T17:20:04.2144387Z ##[group]Operating System
+e2e	Set up job	2026-11-10T17:20:04.2144805Z Ubuntu
+e2e	Set up job	2026-11-10T17:20:04.2145181Z 24.04.5
+e2e	Set up job	2026-11-10T17:20:04.2145696Z LTS
+e2e	Set up job	2026-11-10T17:20:04.2147711Z ##[endgroup]
+e2e	Set up job	2026-11-10T17:20:04.2148148Z ##[group]Runner Image
+e2e	Set up job	2026-11-10T17:20:04.2148658Z Image: ubuntu-24.04
+e2e	Set up job	2026-11-10T17:20:04.2149016Z Version: 20261101.360.1
+e2e	Set up job	2026-11-10T17:20:04.2149700Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20261101.360/images/ubuntu/Ubuntu2404-Readme.md
+e2e	Set up job	2026-11-10T17:20:04.2150768Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20261101.360
+e2e	Set up job	2026-11-10T17:20:04.2151515Z ##[endgroup]
+e2e	Set up job	2026-11-10T17:20:04.2152181Z ##[group]GITHUB_TOKEN Permissions
+e2e	Set up job	2026-11-10T17:20:04.2156188Z Contents: read
+e2e	Set up job	2026-11-10T17:20:04.2159384Z Metadata: read
+e2e	Set up job	2026-11-10T17:20:04.2161207Z ##[endgroup]
+e2e	Set up job	2026-11-10T17:20:04.2165371Z Secret source: Actions
+e2e	Set up job	2026-11-10T17:20:04.2167663Z Cache mode: write
+e2e	Set up job	2026-11-10T17:20:04.2168389Z Prepare workflow directory
+e2e	Set up job	2026-11-10T17:20:04.2755317Z Prepare all required actions
+e2e	Set up job	2026-11-10T17:20:04.2845642Z Getting action download info
+e2e	Set up job	2026-11-10T17:20:04.6265372Z Download action repository 'actions/checkout@v6' (SHA:d23441a48e516b6c34aea4fa41551a30e30af803)
+e2e	Set up job	2026-11-10T17:20:04.7162491Z Download action repository 'actions/setup-go@v6' (SHA:924ae3a1cded613372ab5595356fb5720e22ba16)
+e2e	Set up job	2026-11-10T17:20:05.3370559Z Download action repository 'actions/cache@v5' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+e2e	Set up job	2026-11-10T17:20:05.4868025Z Download action repository 'actions/upload-artifact@v4' (SHA:ea165f8d65b6e75b540449e92b4886f43607fa02)
+e2e	Set up job	2026-11-10T17:20:05.6849813Z Complete job name: e2e
+e2e	Run actions/checkout@v6	﻿2026-11-10T17:20:05.7413604Z ##[group]Run actions/checkout@v6
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7414130Z with:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7414400Z   persist-credentials: false
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7414753Z   repository: miguelangaranocurrents/grafana-aaeb36
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7417532Z   token: ***
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7417787Z   ssh-strict: true
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7418046Z   ssh-user: git
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7418296Z   clean: true
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7418568Z   sparse-checkout-cone-mode: true
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7418873Z   fetch-depth: 1
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7419127Z   fetch-tags: false
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7419389Z   show-progress: true
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7419659Z   lfs: false
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7419916Z   submodules: false
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7420185Z   set-safe-directory: true
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7420483Z   allow-unsafe-pr-checkout: false
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7420917Z env:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7421235Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7421639Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.7421912Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9855406Z Syncing repository: miguelangaranocurrents/grafana-aaeb36
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9857076Z ##[group]Getting Git version info
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9857529Z Working directory is '/home/runner/work/grafana-aaeb36/grafana-aaeb36'
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9858179Z [command]/usr/bin/git version
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9950622Z git version 2.56.0
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9967192Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:05.9997129Z Temporarily overriding HOME='/home/runner/work/_temp/461f73b5-1942-484f-af84-0ae12a9df03c' before making global git config changes
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0017746Z Adding repository directory to the temporary git global config as a safe directory
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0023524Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/grafana-aaeb36/grafana-aaeb36
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0049925Z Deleting the contents of '/home/runner/work/grafana-aaeb36/grafana-aaeb36'
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0131758Z ##[group]Determining repository object format
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0133891Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0134873Z ##[group]Initializing the repository
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0135798Z [command]/usr/bin/git init /home/runner/work/grafana-aaeb36/grafana-aaeb36
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0167928Z hint: Using 'master' as the name for the initial branch. This default branch name
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0169083Z hint: will change to "main" in Git 3.0. To configure the initial branch name
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0170173Z hint: to use in all of your new repositories, which will suppress this warning,
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0170674Z hint: call:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0170958Z hint:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0171342Z hint: 	git config --global init.defaultBranch <name>
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0171955Z hint:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0172348Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0172956Z hint: 'development'. The just-created branch can be renamed via this command:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0173701Z hint:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0174103Z hint: 	git branch -m <name>
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0174580Z hint:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0175196Z hint: Disable this message with "git config set advice.defaultBranchName false"
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0176316Z Initialized empty Git repository in /home/runner/work/grafana-aaeb36/grafana-aaeb36/.git/
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0196943Z [command]/usr/bin/git remote add origin https://github.com/miguelangaranocurrents/grafana-aaeb36
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0233958Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0234725Z ##[group]Disabling automatic garbage collection
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0237498Z [command]/usr/bin/git config --local gc.auto 0
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0267723Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0268467Z ##[group]Setting up auth
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0269014Z Removing SSH command configuration
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0275767Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0311674Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0638719Z Removing HTTP extra header
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0644972Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0684976Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0879132Z Removing includeIf entries pointing to credentials config files
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0884464Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.0924872Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1129098Z [command]/usr/bin/git config --file /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config http.https://github.com/.extraheader AUTHORIZATION: basic ***
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1173693Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git.path /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1211940Z [command]/usr/bin/git config --local includeIf.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1249994Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1288867Z [command]/usr/bin/git config --local includeIf.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1322483Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1328843Z ##[group]Fetching the repository
+e2e	Run actions/checkout@v6	2026-11-10T17:20:06.1329725Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +c18c90d375168b6dcbd8e9e707e9921b703bf908:refs/remotes/origin/main
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4144842Z From https://github.com/miguelangaranocurrents/grafana-aaeb36
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4146303Z  * [new ref]           c18c90d375168b6dcbd8e9e707e9921b703bf908 -> origin/main
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4153015Z [command]/usr/bin/git branch --list --remote origin/main
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4186509Z   origin/main
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4193459Z [command]/usr/bin/git rev-parse refs/remotes/origin/main
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4223748Z c18c90d375168b6dcbd8e9e707e9921b703bf908
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4228028Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4228705Z ##[group]Determining the checkout info
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4229338Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4232592Z [command]/usr/bin/git sparse-checkout disable
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4288462Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4326684Z ##[group]Checking out the ref
+e2e	Run actions/checkout@v6	2026-11-10T17:20:08.4330118Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.4723556Z Updating files:  78% (18656/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.4837923Z Updating files:  79% (18756/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.4938068Z Updating files:  80% (18993/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5032184Z Updating files:  81% (19231/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5127931Z Updating files:  82% (19468/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5235777Z Updating files:  83% (19706/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5341796Z Updating files:  84% (19943/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5458337Z Updating files:  85% (20180/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5612166Z Updating files:  86% (20418/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5710102Z Updating files:  87% (20655/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5809508Z Updating files:  88% (20893/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.5910224Z Updating files:  89% (21130/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6000232Z Updating files:  90% (21367/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6250433Z Updating files:  91% (21605/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6323213Z Updating files:  92% (21842/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6393275Z Updating files:  93% (22080/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6468734Z Updating files:  94% (22317/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6547484Z Updating files:  95% (22554/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6619729Z Updating files:  96% (22792/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.6696965Z Updating files:  97% (23029/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7331655Z Updating files:  98% (23267/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7456546Z Updating files:  99% (23504/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7457483Z Updating files: 100% (23741/23741)
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7457744Z Updating files: 100% (23741/23741), done.
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7639716Z Switched to a new branch 'main'
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7643573Z branch 'main' set up to track 'origin/main'.
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7685072Z ##[endgroup]
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7738066Z [command]/usr/bin/git log -1 --format=%H
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7772520Z c18c90d375168b6dcbd8e9e707e9921b703bf908
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7781393Z ##[group]Removing auth
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7781755Z Removing SSH command configuration
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7784533Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.7823733Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8056644Z Removing HTTP extra header
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8059565Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8104618Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8340228Z Removing includeIf entries pointing to credentials config files
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8343914Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8382588Z includeif.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8383053Z includeif.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git/worktrees/*.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8383320Z includeif.gitdir:/github/workspace/.git.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8383536Z includeif.gitdir:/github/workspace/.git/worktrees/*.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8394360Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8427803Z /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8436964Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git.path /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8486815Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git/worktrees/*.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8528478Z /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8535317Z [command]/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/grafana-aaeb36/grafana-aaeb36/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8584949Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8628280Z /github/runner_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8637116Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8682426Z [command]/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8719452Z /github/runner_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8727117Z [command]/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.8781607Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.9022935Z Removing credentials config '/home/runner/work/_temp/git-credentials-e3626638-4b5c-411a-af1b-5d2faa34a47e.config'
+e2e	Run actions/checkout@v6	2026-11-10T17:20:09.9032096Z ##[endgroup]
+e2e	Prepare runner	﻿2026-11-10T17:20:09.9218384Z ##[group]Run mkdir -p "$TMPDIR"
+e2e	Prepare runner	2026-11-10T17:20:09.9218639Z [36;1mmkdir -p "$TMPDIR"[0m
+e2e	Prepare runner	2026-11-10T17:20:09.9218971Z [36;1msudo fallocate -l 8G /swapfile2 && sudo chmod 600 /swapfile2 && sudo mkswap /swapfile2 && sudo swapon /swapfile2 || true[0m
+e2e	Prepare runner	2026-11-10T17:20:09.9219337Z [36;1mfree -g; nproc; df -h .[0m
+e2e	Prepare runner	2026-11-10T17:20:09.9239753Z shell: /usr/bin/bash -e {0}
+e2e	Prepare runner	2026-11-10T17:20:09.9239933Z env:
+e2e	Prepare runner	2026-11-10T17:20:09.9240122Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Prepare runner	2026-11-10T17:20:09.9240345Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Prepare runner	2026-11-10T17:20:09.9240483Z ##[endgroup]
+e2e	Prepare runner	2026-11-10T17:20:09.9855554Z Setting up swapspace version 1, size = 8 GiB (8589930496 bytes)
+e2e	Prepare runner	2026-11-10T17:20:09.9855985Z no label, UUID=7b9d5b3d-2618-4b19-84c8-f47362105789
+e2e	Prepare runner	2026-11-10T17:20:09.9958321Z                total        used        free      shared  buff/cache   available
+e2e	Prepare runner	2026-11-10T17:20:09.9958822Z Mem:              15           1          13           0           1          14
+e2e	Prepare runner	2026-11-10T17:20:09.9959142Z Swap:             10           0          10
+e2e	Prepare runner	2026-11-10T17:20:09.9975122Z 4
+e2e	Prepare runner	2026-11-10T17:20:09.9991724Z Filesystem      Size  Used Avail Use% Mounted on
+e2e	Prepare runner	2026-11-10T17:20:09.9992030Z /dev/root       145G   67G   78G  47% /
+e2e	Set up Node.js	﻿2026-11-10T17:20:10.0090818Z Prepare all required actions
+e2e	Set up Node.js	2026-11-10T17:20:10.0091217Z Getting action download info
+e2e	Set up Node.js	2026-11-10T17:20:10.1363167Z Download action repository 'actions/setup-node@v6' (SHA:249970729cb0ef3589644e2896645e5dc5ba9c38)
+e2e	Set up Node.js	2026-11-10T17:20:10.2348656Z ##[group]Run ./.github/actions/setup-node
+e2e	Set up Node.js	2026-11-10T17:20:10.2348835Z with:
+e2e	Set up Node.js	2026-11-10T17:20:10.2348946Z   cache: false
+e2e	Set up Node.js	2026-11-10T17:20:10.2349055Z   cwd: .
+e2e	Set up Node.js	2026-11-10T17:20:10.2349158Z env:
+e2e	Set up Node.js	2026-11-10T17:20:10.2349317Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Set up Node.js	2026-11-10T17:20:10.2349517Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Set up Node.js	2026-11-10T17:20:10.2349642Z ##[endgroup]
+e2e	Set up Node.js	2026-11-10T17:20:10.2388156Z ##[start-action display=Run actions/setup-node@v6;id=__self.__actions_setup-node]
+e2e	Set up Node.js	2026-11-10T17:20:10.2444545Z ##[group]Run actions/setup-node@v6
+e2e	Set up Node.js	2026-11-10T17:20:10.2444725Z with:
+e2e	Set up Node.js	2026-11-10T17:20:10.2444847Z   node-version-file: ./.nvmrc
+e2e	Set up Node.js	2026-11-10T17:20:10.2444995Z   cache-dependency-path: false
+e2e	Set up Node.js	2026-11-10T17:20:10.2445137Z   check-latest: false
+e2e	Set up Node.js	2026-11-10T17:20:10.2446672Z   token: ***
+e2e	Set up Node.js	2026-11-10T17:20:10.2446794Z   package-manager-cache: true
+e2e	Set up Node.js	2026-11-10T17:20:10.2446933Z env:
+e2e	Set up Node.js	2026-11-10T17:20:10.2447092Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Set up Node.js	2026-11-10T17:20:10.2447291Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Set up Node.js	2026-11-10T17:20:10.2447419Z ##[endgroup]
+e2e	Set up Node.js	2026-11-10T17:20:10.3524591Z Node version file is not JSON file
+e2e	Set up Node.js	2026-11-10T17:20:10.3525395Z Resolved ./.nvmrc as 24.11.0
+e2e	Set up Node.js	2026-11-10T17:20:10.3545601Z Attempting to download 24.11.0...
+e2e	Set up Node.js	2026-11-10T17:20:11.6159403Z Acquiring 24.11.0 - x64 from https://github.com/actions/node-versions/releases/download/24.11.0-18894910158/node-24.11.0-linux-x64.tar.gz
+e2e	Set up Node.js	2026-11-10T17:20:12.1907000Z Extracting ...
+e2e	Set up Node.js	2026-11-10T17:20:12.2007277Z [command]/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/6282f257-d281-4be7-ad2d-d56e8b94711b -f /home/runner/work/_temp/ac66d408-c104-4c66-b126-10399167fbc3
+e2e	Set up Node.js	2026-11-10T17:20:13.1460180Z Adding to the cache ...
+e2e	Set up Node.js	2026-11-10T17:20:16.2085539Z ##[group]Environment details
+e2e	Set up Node.js	2026-11-10T17:20:16.5791470Z node: v24.11.0
+e2e	Set up Node.js	2026-11-10T17:20:16.5791794Z npm: 11.6.1
+e2e	Set up Node.js	2026-11-10T17:20:16.5791973Z yarn: 4.18.1
+e2e	Set up Node.js	2026-11-10T17:20:16.5792382Z ##[endgroup]
+e2e	Set up Node.js	2026-11-10T17:20:16.5938409Z ##[end-action id=__self.__actions_setup-node;outcome=success;conclusion=success;duration_ms=6354]
+e2e	Set up Go	﻿2026-11-10T17:20:16.6017145Z ##[group]Run actions/setup-go@v6
+e2e	Set up Go	2026-11-10T17:20:16.6017325Z with:
+e2e	Set up Go	2026-11-10T17:20:16.6017448Z   go-version-file: go.mod
+e2e	Set up Go	2026-11-10T17:20:16.6017578Z   cache: false
+e2e	Set up Go	2026-11-10T17:20:16.6017693Z   check-latest: false
+e2e	Set up Go	2026-11-10T17:20:16.6019061Z   token: ***
+e2e	Set up Go	2026-11-10T17:20:16.6019171Z env:
+e2e	Set up Go	2026-11-10T17:20:16.6019329Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Set up Go	2026-11-10T17:20:16.6019534Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Set up Go	2026-11-10T17:20:16.6019663Z ##[endgroup]
+e2e	Set up Go	2026-11-10T17:20:16.6961829Z Setup go version spec 1.27.2
+e2e	Set up Go	2026-11-10T17:20:16.6969242Z Attempting to download 1.27.2...
+e2e	Set up Go	2026-11-10T17:20:17.7597278Z matching 1.27.2...
+e2e	Set up Go	2026-11-10T17:20:17.7620219Z Acquiring 1.27.2 from https://github.com/actions/go-versions/releases/download/1.27.2-37875086547/go-1.27.2-linux-x64.tar.gz
+e2e	Set up Go	2026-11-10T17:20:18.4722482Z Extracting Go...
+e2e	Set up Go	2026-11-10T17:20:18.4822846Z [command]/usr/bin/tar xz --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/30c1c0d7-bb88-40f6-9a87-334c13a7b891 -f /home/runner/work/_temp/488971e7-f45b-4355-a270-8987d9110dda
+e2e	Set up Go	2026-11-10T17:20:19.8996295Z Successfully extracted go to /home/runner/work/_temp/30c1c0d7-bb88-40f6-9a87-334c13a7b891
+e2e	Set up Go	2026-11-10T17:20:19.8996998Z Adding to the cache ...
+e2e	Set up Go	2026-11-10T17:20:23.5214575Z Successfully cached go to /opt/hostedtoolcache/go/1.27.2/x64
+e2e	Set up Go	2026-11-10T17:20:23.5215429Z Added go to the path
+e2e	Set up Go	2026-11-10T17:20:23.5217828Z Successfully set up Go version 1.27.2
+e2e	Set up Go	2026-11-10T17:20:23.5426650Z go version go1.27.2 linux/amd64
+e2e	Set up Go	2026-11-10T17:20:23.5426940Z 
+e2e	Set up Go	2026-11-10T17:20:23.5427349Z ##[group]go env
+e2e	Set up Go	2026-11-10T17:20:23.6632844Z AR='ar'
+e2e	Set up Go	2026-11-10T17:20:23.6633160Z CC='gcc'
+e2e	Set up Go	2026-11-10T17:20:23.6633597Z CGO_CFLAGS='-O2 -g'
+e2e	Set up Go	2026-11-10T17:20:23.6633750Z CGO_CPPFLAGS=''
+e2e	Set up Go	2026-11-10T17:20:23.6633896Z CGO_CXXFLAGS='-O2 -g'
+e2e	Set up Go	2026-11-10T17:20:23.6634035Z CGO_ENABLED='1'
+e2e	Set up Go	2026-11-10T17:20:23.6634171Z CGO_FFLAGS='-O2 -g'
+e2e	Set up Go	2026-11-10T17:20:23.6634305Z CGO_LDFLAGS='-O2 -g'
+e2e	Set up Go	2026-11-10T17:20:23.6634432Z CXX='g++'
+e2e	Set up Go	2026-11-10T17:20:23.6634552Z GCCGO='gccgo'
+e2e	Set up Go	2026-11-10T17:20:23.6634690Z GO111MODULE=''
+e2e	Set up Go	2026-11-10T17:20:23.6634809Z GOAMD64='v1'
+e2e	Set up Go	2026-11-10T17:20:23.6634924Z GOARCH='amd64'
+e2e	Set up Go	2026-11-10T17:20:23.6635039Z GOAUTH='netrc'
+e2e	Set up Go	2026-11-10T17:20:23.6635177Z GOBIN='/home/runner/go/bin'
+e2e	Set up Go	2026-11-10T17:20:23.6635367Z GOCACHE='/home/runner/.cache/go-build'
+e2e	Set up Go	2026-11-10T17:20:23.6635534Z GOCACHEPROG=''
+e2e	Set up Go	2026-11-10T17:20:23.6635654Z GODEBUG=''
+e2e	Set up Go	2026-11-10T17:20:23.6635798Z GOENV='/home/runner/.config/go/env'
+e2e	Set up Go	2026-11-10T17:20:23.6636047Z GOEXE=''
+e2e	Set up Go	2026-11-10T17:20:23.6636161Z GOEXPERIMENT=''
+e2e	Set up Go	2026-11-10T17:20:23.6636280Z GOFIPS140='off'
+e2e	Set up Go	2026-11-10T17:20:23.6636578Z GOFLAGS=''
+e2e	Set up Go	2026-11-10T17:20:23.6637192Z GOGCCFLAGS='-fPIC -m64 -pthread -Wl,--no-gc-sections -fmessage-length=0 -ffile-prefix-map=/home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp/go-build3560237900=/tmp/go-build -gno-record-gcc-switches'
+e2e	Set up Go	2026-11-10T17:20:23.6637676Z GOHOSTARCH='amd64'
+e2e	Set up Go	2026-11-10T17:20:23.6637801Z GOHOSTOS='linux'
+e2e	Set up Go	2026-11-10T17:20:23.6637920Z GOINSECURE=''
+e2e	Set up Go	2026-11-10T17:20:23.6638123Z GOMOD='/home/runner/work/grafana-aaeb36/grafana-aaeb36/go.mod'
+e2e	Set up Go	2026-11-10T17:20:23.6638370Z GOMODCACHE='/home/runner/go/pkg/mod'
+e2e	Set up Go	2026-11-10T17:20:23.6638553Z GONOPROXY=''
+e2e	Set up Go	2026-11-10T17:20:23.6638668Z GONOSUMDB=''
+e2e	Set up Go	2026-11-10T17:20:23.6638779Z GOOS='linux'
+e2e	Set up Go	2026-11-10T17:20:23.6638938Z GOPACKAGESDRIVER=''
+e2e	Set up Go	2026-11-10T17:20:23.6639077Z GOPATH='/home/runner/go'
+e2e	Set up Go	2026-11-10T17:20:23.6639213Z GOPRIVATE=''
+e2e	Set up Go	2026-11-10T17:20:23.6639395Z GOPROXY='https://proxy.golang.org,direct'
+e2e	Set up Go	2026-11-10T17:20:23.6639628Z GOROOT='/opt/hostedtoolcache/go/1.27.2/x64'
+e2e	Set up Go	2026-11-10T17:20:23.6639813Z GOSUMDB='sum.golang.org'
+e2e	Set up Go	2026-11-10T17:20:23.6639954Z GOTELEMETRY='local'
+e2e	Set up Go	2026-11-10T17:20:23.6640139Z GOTELEMETRYDIR='/home/runner/.config/go/telemetry'
+e2e	Set up Go	2026-11-10T17:20:23.6640320Z GOTMPDIR=''
+e2e	Set up Go	2026-11-10T17:20:23.6640442Z GOTOOLCHAIN='local'
+e2e	Set up Go	2026-11-10T17:20:23.6640663Z GOTOOLDIR='/opt/hostedtoolcache/go/1.27.2/x64/pkg/tool/linux_amd64'
+e2e	Set up Go	2026-11-10T17:20:23.6640863Z GOVCS=''
+e2e	Set up Go	2026-11-10T17:20:23.6640982Z GOVERSION='go1.27.2'
+e2e	Set up Go	2026-11-10T17:20:23.6641194Z GOWORK='/home/runner/work/grafana-aaeb36/grafana-aaeb36/go.work'
+e2e	Set up Go	2026-11-10T17:20:23.6641598Z PKG_CONFIG='pkg-config'
+e2e	Set up Go	2026-11-10T17:20:23.6641680Z 
+e2e	Set up Go	2026-11-10T17:20:23.6641951Z ##[endgroup]
+e2e	Restore backend build	﻿2026-11-10T17:20:26.2227671Z ##[group]Run actions/cache@v5
+e2e	Restore backend build	2026-11-10T17:20:26.2227849Z with:
+e2e	Restore backend build	2026-11-10T17:20:26.2228074Z   key: e2e-backend-Linux-ba245e0ca0f1824d5e25ed63bec338f23498afcf1f2545a814332e420a314679
+e2e	Restore backend build	2026-11-10T17:20:26.2228331Z   path: bin
+e2e	Restore backend build	2026-11-10T17:20:26.2228454Z   enableCrossOsArchive: false
+e2e	Restore backend build	2026-11-10T17:20:26.2228594Z   fail-on-cache-miss: false
+e2e	Restore backend build	2026-11-10T17:20:26.2228726Z   lookup-only: false
+e2e	Restore backend build	2026-11-10T17:20:26.2228844Z   save-always: false
+e2e	Restore backend build	2026-11-10T17:20:26.2228973Z env:
+e2e	Restore backend build	2026-11-10T17:20:26.2229127Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Restore backend build	2026-11-10T17:20:26.2229319Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Restore backend build	2026-11-10T17:20:26.2229442Z   GOTOOLCHAIN: local
+e2e	Restore backend build	2026-11-10T17:20:26.2229556Z ##[endgroup]
+e2e	Restore backend build	2026-11-10T17:20:26.5155083Z Cache not found for input keys: e2e-backend-Linux-ba245e0ca0f1824d5e25ed63bec338f23498afcf1f2545a814332e420a314679
+e2e	Start backend build	﻿2026-11-10T17:20:26.5259009Z ##[group]Run nohup bash -c 'make build-go > go-build.log 2>&1; echo $? > go-build.exit' > /dev/null 2>&1 &
+e2e	Start backend build	2026-11-10T17:20:26.5259548Z [36;1mnohup bash -c 'make build-go > go-build.log 2>&1; echo $? > go-build.exit' > /dev/null 2>&1 &[0m
+e2e	Start backend build	2026-11-10T17:20:26.5277262Z shell: /usr/bin/bash -e {0}
+e2e	Start backend build	2026-11-10T17:20:26.5277560Z env:
+e2e	Start backend build	2026-11-10T17:20:26.5277811Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Start backend build	2026-11-10T17:20:26.5278200Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Start backend build	2026-11-10T17:20:26.5278417Z   GOTOOLCHAIN: local
+e2e	Start backend build	2026-11-10T17:20:26.5278614Z ##[endgroup]
+e2e	Install yarn dependencies	﻿2026-11-10T17:20:26.5399131Z Prepare all required actions
+e2e	Install yarn dependencies	2026-11-10T17:20:26.5399478Z Getting action download info
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6833812Z ##[group]Run ./.github/actions/yarn-install
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834014Z with:
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834123Z   cwd: .
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834230Z   cache-prefix: default
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834359Z   cache-npm-cache: true
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834492Z   cache-node-modules: false
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834634Z   cache-install-state: false
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834770Z   enable-corepack: true
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6834891Z   hardened-mode: auto
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6835008Z env:
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6835160Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6835355Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6835475Z   GOTOOLCHAIN: local
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6835592Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6839459Z ##[start-action display=⚙️ Enable Corepack;id=__self_2.__run]
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6852349Z ##[group]Run corepack enable
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6852538Z [36;1mcorepack enable[0m
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6872001Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6872195Z env:
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6872356Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6872548Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6872673Z   GOTOOLCHAIN: local
+e2e	Install yarn dependencies	2026-11-10T17:20:26.6872792Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7416792Z ##[end-action id=__self_2.__run;outcome=success;conclusion=success;duration_ms=57]
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7419319Z ##[start-action display=⚙️ Expose yarn config as "$GITHUB_OUTPUT";id=__self_2.yarn-config]
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7434192Z ##[group]Run echo "CACHE_FOLDER=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7434535Z [36;1mecho "CACHE_FOLDER=$(yarn config get cacheFolder)" >> $GITHUB_OUTPUT[0m
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7435020Z [36;1mecho "CURRENT_NODE_VERSION="node-$(node --version)"" >> $GITHUB_OUTPUT[0m
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7435556Z [36;1mecho "CURRENT_BRANCH=$(echo ${GITHUB_REF#refs/heads/} | sed -r 's,/,-,g')" >> $GITHUB_OUTPUT[0m
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7435949Z [36;1mecho "NPM_GLOBAL_CACHE_FOLDER=$(npm config get cache)" >> $GITHUB_OUTPUT[0m
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7455224Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7455417Z env:
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7455636Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7455946Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7456108Z   GOTOOLCHAIN: local
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7456238Z   YARN_ENABLE_GLOBAL_CACHE: false
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7456528Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:26.7864485Z ! Corepack is about to download https://repo.yarnpkg.com/4.18.1/packages/yarnpkg-cli/bin/yarn.js
+e2e	Install yarn dependencies	2026-11-10T17:20:27.6833559Z ##[end-action id=__self_2.yarn-config;outcome=success;conclusion=success;duration_ms=941]
+e2e	Install yarn dependencies	2026-11-10T17:20:27.6835785Z ##[start-action display=Restore yarn cache;id=__self_2.yarn-download-cache]
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7335217Z ##[group]Run actions/cache@v5
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7335405Z with:
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7335577Z   path: /home/runner/work/grafana-aaeb36/grafana-aaeb36/.yarn/cache
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7335912Z   key: yarn-download-cache-default-a388c5d9a571daee85986bfaac306f78efdc70558166f4fd699f080e0cefe484
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7336218Z   restore-keys: yarn-download-cache-default-
+e2e	Install yarn dependencies	
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7336712Z   enableCrossOsArchive: false
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7336931Z   fail-on-cache-miss: false
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337063Z   lookup-only: false
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337178Z   save-always: false
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337291Z env:
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337440Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337625Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337746Z   GOTOOLCHAIN: local
+e2e	Install yarn dependencies	2026-11-10T17:20:27.7337861Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.0515156Z Cache not found for input keys: yarn-download-cache-default-a388c5d9a571daee85986bfaac306f78efdc70558166f4fd699f080e0cefe484, yarn-download-cache-default-
+e2e	Install yarn dependencies	2026-11-10T17:20:28.0586280Z ##[end-action id=__self_2.yarn-download-cache;outcome=success;conclusion=success;duration_ms=374]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.0589009Z ##[start-action display=Restore node_modules;id=__self_2.yarn-nm-cache]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.0607390Z ##[end-action id=__self_2.yarn-nm-cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.0608652Z ##[start-action display=Restore global npm cache folder;id=__self_2.npm-global-cache]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1092494Z ##[group]Run actions/cache@v5
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1092666Z with:
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1092786Z   path: /home/runner/.npm
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1093112Z   key: yarn-npm-global-cache-default-Linux-node-v24.11.0-a388c5d9a571daee85986bfaac306f78efdc70558166f4fd699f080e0cefe484
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1093455Z   enableCrossOsArchive: false
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1093597Z   fail-on-cache-miss: false
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1093727Z   lookup-only: false
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1093846Z   save-always: false
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1093962Z env:
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1094112Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1094335Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1094457Z   GOTOOLCHAIN: local
+e2e	Install yarn dependencies	2026-11-10T17:20:28.1094576Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.3960953Z Cache not found for input keys: yarn-npm-global-cache-default-Linux-node-v24.11.0-a388c5d9a571daee85986bfaac306f78efdc70558166f4fd699f080e0cefe484
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4025751Z ##[end-action id=__self_2.npm-global-cache;outcome=success;conclusion=success;duration_ms=341]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4027787Z ##[start-action display=Restore yarn install state;id=__self_2.yarn-install-state-cache]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4031042Z ##[end-action id=__self_2.yarn-install-state-cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4033023Z ##[start-action display=Install dependencies;id=__self_2.__run_2]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4045907Z ##[group]Run yarn install --immutable --inline-builds
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4046144Z [36;1myarn install --immutable --inline-builds[0m
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4062918Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063109Z env:
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063274Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063463Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063587Z   GOTOOLCHAIN: local
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063713Z   YARN_ENABLE_GLOBAL_CACHE: false
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063851Z   YARN_ENABLE_MIRROR: false
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4063985Z   YARN_NM_MODE: hardlinks-local
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4064135Z   YARN_INSTALL_STATE_PATH: .yarn/install-state.gz
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4064304Z   YARN_ENABLE_HARDENED_MODE: 0
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4064441Z   PUPPETEER_SKIP_DOWNLOAD: true
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4064573Z   CYPRESS_INSTALL_BINARY: 0
+e2e	Install yarn dependencies	2026-11-10T17:20:28.4064699Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:28.8480417Z [94m➤[39m YN0000: · Yarn 4.18.1
+e2e	Install yarn dependencies	2026-11-10T17:20:28.8540192Z [94m➤[39m [90mYN0000[39m: ┌ Resolution step
+e2e	Install yarn dependencies	2026-11-10T17:20:28.8540661Z ##[group]Resolution step
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3598079Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3598888Z [94m➤[39m [90mYN0000[39m: └ Completed in 0s 505ms
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3648368Z [94m➤[39m [90mYN0000[39m: ┌ Post-resolution validation
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3649028Z ##[group]Post-resolution validation
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3650723Z [93m➤[39m YN0060: │ [38;5;166m@grafana/[39m[38;5;173mdata[39m is listed by your project with version [38;5;111m13.3.0-pre[39m ([38;5;111mp26935a[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173malerting[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3653011Z [93m➤[39m YN0060: │ [38;5;166m@grafana/[39m[38;5;173mruntime[39m is listed by your project with version [38;5;111m13.3.0-pre[39m ([38;5;111mpd4ce26[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173malerting[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3655414Z [93m➤[39m YN0060: │ [38;5;166m@grafana/[39m[38;5;173mui[39m is listed by your project with version [38;5;111m13.3.0-pre[39m ([38;5;111mp1dfdae[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173malerting[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3658289Z [93m➤[39m YN0060: │ [38;5;166m@rspack/[39m[38;5;173mcore[39m is listed by your project with version [38;5;111m2.2.4[39m ([38;5;111mpe7d143[39m), which doesn't satisfy what [38;5;173mcss-loader[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3660138Z [93m➤[39m YN0060: │ [38;5;166m@swc/[39m[38;5;173mcore[39m is listed by your project with version [38;5;111m1.13.3[39m ([38;5;111mp16339c[39m), which doesn't satisfy what [38;5;173mnx[39m and other dependencies request ([38;5;37m^1.15.8[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3661347Z [93m➤[39m YN0060: │ [38;5;166m@swc/[39m[38;5;173mhelpers[39m is listed by your project with version [38;5;111m0.5.17[39m ([38;5;111mp251237[39m), which doesn't satisfy what [38;5;166m@rspack/[39m[38;5;173mcore[39m and other dependencies request ([38;5;37m~0.5.23[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3662609Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mdom[39m is listed by your project with version [38;5;111m10.4.1[39m ([38;5;111mp64a447[39m), which doesn't satisfy what [38;5;173mtesting-library-selector[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3663830Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mjest-dom[39m is listed by your project with version [38;5;111m6.6.4[39m ([38;5;111mp1b184e[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^6.9.1[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3664946Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mjest-dom[39m is listed by your project with version [38;5;111m6.6.4[39m ([38;5;111mp8c7850[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^6.9.1[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3666068Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mjest-dom[39m is listed by your project with version [38;5;111m6.6.4[39m ([38;5;111mpac51fe[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^6.9.1[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3667321Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mp3e89ea[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3668444Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mp48de8f[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3669605Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mp55ddc3[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3670730Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mp8852c0[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3671832Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mpb71133[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3672930Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mpd0cc26[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3674285Z [93m➤[39m YN0060: │ [38;5;166m@testing-library/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m16.3.0[39m ([38;5;111mpf42985[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m requests ([38;5;37m^16.3.2[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3675588Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mp2660f5[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3678199Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mp470f2e[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3680892Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mp854fd2[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3683392Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mp8b7fc3[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3685806Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mpafe536[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([38;5;37m^18.2.25[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3688425Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mpe946b4[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3690886Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.18[39m ([38;5;111mpee8112[39m), which doesn't satisfy what [38;5;173mreact-calendar[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([38;5;37m^18.2.25[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3693294Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.4[39m ([38;5;111mp33d261[39m), which doesn't satisfy what [38;5;173mreact-redux[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([38;5;37m^18.0.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3695610Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.4[39m ([38;5;111mp41a823[39m), which doesn't satisfy what [38;5;173mreact-redux[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([38;5;37m^18.0.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3698220Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.4[39m ([38;5;111mpb259ed[39m), which doesn't satisfy what [38;5;173mreact-redux[39m (via [38;5;166m@react-awesome-query-builder/[39m[38;5;173mui[39m) and other dependencies request ([38;5;37m^18.0.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3701023Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.4[39m ([38;5;111mpdd7567[39m), which doesn't satisfy what [38;5;173mreact-redux[39m (via [38;5;166m@react-awesome-query-builder/[39m[38;5;173mui[39m) and other dependencies request ([38;5;37m^18.0.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3703474Z [93m➤[39m YN0060: │ [38;5;166m@types/[39m[38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.4[39m ([38;5;111mpf63025[39m), which doesn't satisfy what [38;5;173mreact-redux[39m (via [38;5;166m@react-awesome-query-builder/[39m[38;5;173mui[39m) and other dependencies request ([38;5;37m^18.0.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3705630Z [93m➤[39m YN0060: │ [38;5;173mesbuild[39m is listed by your project with version [38;5;111m0.28.1[39m ([38;5;111mp0b1da1[39m), which doesn't satisfy what [38;5;173mesbuild-plugin-browserslist[39m and other dependencies request ([38;5;37m~0.25.4[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3718110Z [93m➤[39m YN0060: │ [38;5;173meslint[39m is listed by your project with version [38;5;111m9.32.0[39m ([38;5;111mpa7fd02[39m), which doesn't satisfy what [38;5;166m@emotion/[39m[38;5;173meslint-plugin[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3720235Z [93m➤[39m YN0060: │ [38;5;173mmonaco-editor[39m is listed by your project with version [38;5;111m0.34.1[39m ([38;5;111mp650cca[39m), which doesn't satisfy what [38;5;166m@kusto/[39m[38;5;173mmonaco-kusto[39m and other dependencies request ([38;5;37m~0.46.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3722129Z [93m➤[39m YN0060: │ [38;5;173mmonaco-editor[39m is listed by your project with version [38;5;111m0.34.1[39m ([38;5;111mp91be21[39m), which doesn't satisfy what [38;5;166m@kusto/[39m[38;5;173mmonaco-kusto[39m and other dependencies request ([38;5;37m~0.46.0[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3724071Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp05c4ca[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mllm[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3725480Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp0a1305[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3727390Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp31face[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mruntime[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3729774Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp3ad721[39m), which doesn't satisfy what [38;5;166m@hello-pangea/[39m[38;5;173mdnd[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3731908Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp5cfbeb[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mprometheus[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3734163Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp680496[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3737037Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp7befa7[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3739422Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp94c177[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3741892Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpc90aac[39m), which doesn't satisfy what [38;5;166m@hello-pangea/[39m[38;5;173mdnd[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3744322Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpe453c9[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3746951Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpeb97bc[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3749423Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpf6d4a6[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3751073Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpf9aef4[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3752459Z [93m➤[39m YN0060: │ [38;5;173mreact[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpfc9288[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3753753Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp0b083b[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mprometheus[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3755083Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp3364a7[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3756749Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp70e9d7[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3759076Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp8aef00[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3761176Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp8cd378[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3762488Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp936b2e[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3763922Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp96cfd6[39m), which doesn't satisfy what [38;5;166m@hello-pangea/[39m[38;5;173mdnd[39m (via [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3765532Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp9756d1[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3767304Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mp9b3264[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mprometheus[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3769508Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpb8b984[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3771753Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpca8d02[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mruntime[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3774106Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpe7ceca[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3776622Z [93m➤[39m YN0060: │ [38;5;173mreact-dom[39m is listed by your project with version [38;5;111m19.2.8[39m ([38;5;111mpf9d6c4[39m), which doesn't satisfy what [38;5;173mreact-custom-scrollbars-2[39m (via [38;5;166m@grafana/[39m[38;5;173mui[39m) and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3778887Z [93m➤[39m YN0060: │ [38;5;173mreact-router-dom[39m is listed by your project with version [38;5;111m5.3.4[39m ([38;5;111mp5e98b2[39m), which doesn't satisfy what [38;5;166m@grafana/[39m[38;5;173mscenes-react[39m and other dependencies request ([91mbut they have non-overlapping ranges![39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3781107Z [93m➤[39m YN0060: │ [38;5;173mtypescript[39m is listed by your project with version [38;5;111m6.0.2[39m ([38;5;111mp386201[39m), which doesn't satisfy what [38;5;166m@typescript-eslint/[39m[38;5;173meslint-plugin[39m and other dependencies request ([38;5;37m^5.4.4[39m).
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3783943Z [93m➤[39m YN0002: │ [38;5;166m@grafana-plugins/[39m[38;5;173mgrafana-azure-monitor-datasource[39m[38;5;111m@[39m[38;5;111mworkspace:public/app/plugins/datasource/azuremonitor[39m doesn't provide [38;5;166m@openfeature/[39m[38;5;173mcore[39m ([38;5;111mp5e3696[39m), requested by [38;5;166m@openfeature/[39m[38;5;173mweb-sdk[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3786642Z [93m➤[39m YN0002: │ [38;5;166m@grafana-plugins/[39m[38;5;173mgrafana-cloudwatch-datasource[39m[38;5;111m@[39m[38;5;111mworkspace:public/app/plugins/datasource/cloudwatch[39m doesn't provide [38;5;166m@grafana/[39m[38;5;173mi18n[39m ([38;5;111mp8fd4d6[39m), requested by [38;5;166m@grafana/[39m[38;5;173mprometheus[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3789118Z [93m➤[39m YN0002: │ [38;5;166m@grafana-plugins/[39m[38;5;173mgrafana-cloudwatch-datasource[39m[38;5;111m@[39m[38;5;111mworkspace:public/app/plugins/datasource/cloudwatch[39m doesn't provide [38;5;173mreact-router-dom[39m ([38;5;111mp8a5b6f[39m), requested by [38;5;166m@grafana/[39m[38;5;173mscenes[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3791509Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting [655a6][39m doesn't provide [38;5;166m@testing-library/[39m[38;5;173mdom[39m ([38;5;111mp6266e5[39m), requested by [38;5;166m@testing-library/[39m[38;5;173mreact[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3793587Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting [655a6][39m doesn't provide [38;5;173mesbuild[39m ([38;5;111mp730339[39m), requested by [38;5;173mrollup-plugin-esbuild[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3795551Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting [655a6][39m doesn't provide [38;5;173mrxjs[39m ([38;5;111mp2105b0[39m), requested by [38;5;166m@grafana/[39m[38;5;173mapi-clients[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3797856Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting [655a6][39m doesn't provide [38;5;173mstorybook[39m ([38;5;111mp75e728[39m), requested by [38;5;166m@storybook/[39m[38;5;173maddon-docs[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3799982Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting[39m doesn't provide [38;5;166m@grafana/[39m[38;5;173mruntime[39m ([38;5;111mp926d64[39m), requested by [38;5;166m@grafana/[39m[38;5;173mapi-clients[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3802357Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting[39m doesn't provide [38;5;166m@testing-library/[39m[38;5;173mdom[39m ([38;5;111mp978d22[39m), requested by [38;5;166m@testing-library/[39m[38;5;173mreact[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3804445Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting[39m doesn't provide [38;5;173mesbuild[39m ([38;5;111mpd65903[39m), requested by [38;5;173mrollup-plugin-esbuild[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3806495Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting[39m doesn't provide [38;5;173mrxjs[39m ([38;5;111mpaf751f[39m), requested by [38;5;166m@grafana/[39m[38;5;173mapi-clients[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3808581Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173malerting[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-alerting[39m doesn't provide [38;5;173mstorybook[39m ([38;5;111mpc5308c[39m), requested by [38;5;166m@storybook/[39m[38;5;173maddon-docs[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3811147Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mdata[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-data [5097c][39m doesn't provide [38;5;166m@testing-library/[39m[38;5;173mdom[39m ([38;5;111mp4a897a[39m), requested by [38;5;166m@testing-library/[39m[38;5;173mreact[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3813447Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mdata[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-data [593b9][39m doesn't provide [38;5;166m@testing-library/[39m[38;5;173mdom[39m ([38;5;111mp226c53[39m), requested by [38;5;166m@testing-library/[39m[38;5;173mreact[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3815696Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mdata[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-data[39m doesn't provide [38;5;166m@testing-library/[39m[38;5;173mdom[39m ([38;5;111mp740465[39m), requested by [38;5;166m@testing-library/[39m[38;5;173mreact[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3818089Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mflamegraph[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-flamegraph[39m doesn't provide [38;5;173mreact-dom[39m ([38;5;111mp0bf7f3[39m), requested by [38;5;166m@storybook/[39m[38;5;173mreact[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3820348Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mi18n[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-i18n [380aa][39m doesn't provide [38;5;173meslint[39m ([38;5;111mp531351[39m), requested by [38;5;166m@typescript-eslint/[39m[38;5;173mutils[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3822355Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mi18n[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-i18n [f844a][39m doesn't provide [38;5;173meslint[39m ([38;5;111mp2a8926[39m), requested by [38;5;166m@typescript-eslint/[39m[38;5;173mutils[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3824331Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mi18n[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-i18n[39m doesn't provide [38;5;173meslint[39m ([38;5;111mpc293ba[39m), requested by [38;5;166m@typescript-eslint/[39m[38;5;173mutils[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3826132Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mi18n[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-i18n[39m doesn't provide [38;5;173mreact[39m ([38;5;111mp94d022[39m), requested by [38;5;173mreact-i18next[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3828311Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mo11y-ds-frontend[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-o11y-ds-frontend[39m doesn't provide [38;5;173mreact-dom[39m ([38;5;111mp136357[39m), requested by [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3830411Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mplugin-compat[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-plugin-compat[39m doesn't provide [38;5;173mesbuild[39m ([38;5;111mp5dfdfc[39m), requested by [38;5;173mrollup-plugin-esbuild[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3832455Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173msql[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-sql [655a6][39m doesn't provide [38;5;166m@grafana/[39m[38;5;173mschema[39m ([38;5;111mp963d80[39m), requested by [38;5;166m@grafana/[39m[38;5;173massistant[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3834687Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173msql[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-sql[39m doesn't provide [38;5;166m@grafana/[39m[38;5;173mruntime[39m ([38;5;111mp248c8a[39m), requested by [38;5;166m@grafana/[39m[38;5;173massistant[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3840053Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173msql[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-sql[39m doesn't provide [38;5;166m@grafana/[39m[38;5;173mschema[39m ([38;5;111mp9552f1[39m), requested by [38;5;166m@grafana/[39m[38;5;173massistant[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3842595Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173msql[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-sql[39m doesn't provide [38;5;173mreact[39m ([38;5;111mp589001[39m), requested by [38;5;166m@grafana/[39m[38;5;173massistant[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3844705Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173msql[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-sql[39m doesn't provide [38;5;173mreact-dom[39m ([38;5;111mp5f42fe[39m), requested by [38;5;166m@grafana/[39m[38;5;173mplugin-ui[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3847249Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mtest-utils[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-test-utils[39m doesn't provide [38;5;166m@openfeature/[39m[38;5;173mweb-sdk[39m ([38;5;111mp1d8c95[39m), requested by [38;5;166m@openfeature/[39m[38;5;173mreact-sdk[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3849586Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mtest-utils[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-test-utils[39m doesn't provide [38;5;166m@reduxjs/[39m[38;5;173mtoolkit[39m ([38;5;111mp1fe4fa[39m), requested by [38;5;166m@grafana/[39m[38;5;173mapi-clients[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3851732Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mtest-utils[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-test-utils[39m doesn't provide [38;5;173mreact[39m ([38;5;111mpe7f63b[39m), requested by [38;5;166m@openfeature/[39m[38;5;173mreact-sdk[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3853642Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mui[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-ui [5097c][39m doesn't provide [38;5;173mreact-is[39m ([38;5;111mpdc2e70[39m), requested by [38;5;173mreact-element-to-jsx-string[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3855528Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mui[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-ui [5097c][39m doesn't provide [38;5;173mwebpack[39m ([38;5;111mp0d30b0[39m), requested by [38;5;173mcss-loader[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3857644Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mui[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-ui [593b9][39m doesn't provide [38;5;173mreact-is[39m ([38;5;111mpc2c8e4[39m), requested by [38;5;173mreact-element-to-jsx-string[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3859721Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mui[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-ui [593b9][39m doesn't provide [38;5;173mwebpack[39m ([38;5;111mpde79e7[39m), requested by [38;5;173mcss-loader[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3861572Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mui[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-ui[39m doesn't provide [38;5;173mreact-is[39m ([38;5;111mpa64ee2[39m), requested by [38;5;173mreact-element-to-jsx-string[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3863465Z [93m➤[39m YN0002: │ [38;5;166m@grafana/[39m[38;5;173mui[39m[38;5;111m@[39m[38;5;111mworkspace:packages/grafana-ui[39m doesn't provide [38;5;173mwebpack[39m ([38;5;111mp556945[39m), requested by [38;5;173mcss-loader[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3865138Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;166m@egjs/[39m[38;5;173mhammerjs[39m ([38;5;111mp683d65[39m), requested by [38;5;173mvis-network[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3866831Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;166m@jest/[39m[38;5;173mreporters[39m ([38;5;111mp99198f[39m), requested by [38;5;173mjest-monocart-coverage[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3868509Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;166m@openfeature/[39m[38;5;173mcore[39m ([38;5;111mpe8082a[39m), requested by [38;5;166m@openfeature/[39m[38;5;173mweb-sdk[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3869894Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;173mcomponent-emitter[39m ([38;5;111mp87a66b[39m), requested by [38;5;173mvis-network[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3870714Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;173mkeycharm[39m ([38;5;111mpe77ce7[39m), requested by [38;5;173mvis-network[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3871598Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;173mplaywright-core[39m ([38;5;111mp73f811[39m), requested by [38;5;166m@axe-core/[39m[38;5;173mplaywright[39m.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3872576Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;173mrollup[39m ([38;5;111mp5600fb[39m), requested by [38;5;166m@rollup/[39m[38;5;173mplugin-node-resolve[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3873511Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;173muuid[39m ([38;5;111mp5bc71d[39m), requested by [38;5;173mvis-data[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3874376Z [93m➤[39m YN0002: │ [38;5;173mgrafana[39m[38;5;111m@[39m[38;5;111mworkspace:.[39m doesn't provide [38;5;173mvis-util[39m ([38;5;111mp630344[39m), requested by [38;5;173mvis-data[39m and other dependencies.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3875302Z [93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by your project; run [38;5;111myarn explain peer-requirements <hash>[39m for details, where [38;5;111m<hash>[39m is the six-letter p-prefixed code.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.3876055Z [93m➤[39m YN0086: │ Some peer dependencies are incorrectly met by dependencies; run [38;5;111myarn explain peer-requirements[39m for details.
+e2e	Install yarn dependencies	2026-11-10T17:20:29.4390183Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:20:29.4390991Z [94m➤[39m [90mYN0000[39m: └ Completed
+e2e	Install yarn dependencies	2026-11-10T17:20:29.4391361Z [94m➤[39m [90mYN0000[39m: ┌ Fetch step
+e2e	Install yarn dependencies	2026-11-10T17:20:29.4391633Z ##[group]Fetch step
+e2e	Install yarn dependencies	2026-11-10T17:20:59.7012106Z [93m➤[39m YN0066: │ [38;5;173mtypescript[39m[38;5;111m@[39m[38;5;111mpatch:@typescript/typescript6@npm%3A6.0.2#optional!builtin<compat/typescript>::version=6.0.2&hash=5786d5[39m: ENOENT: no such file or directory, lstat '/node_modules/typescript/lib/_tsc.js'
+e2e	Install yarn dependencies	2026-11-10T17:21:08.4656345Z [94m➤[39m YN0013: │ [38;5;220m2964[39m packages were added to the project ([38;5;160m+ 483.44 MiB[39m).
+e2e	Install yarn dependencies	2026-11-10T17:21:08.4657086Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:21:08.4657346Z [94m➤[39m [90mYN0000[39m: └ Completed in 39s 26ms
+e2e	Install yarn dependencies	2026-11-10T17:21:08.5427206Z [94m➤[39m [90mYN0000[39m: ┌ Link step
+e2e	Install yarn dependencies	2026-11-10T17:21:08.5428224Z ##[group]Link step
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9633566Z [93m➤[39m YN0004: │ [38;5;166m@scarf/[39m[38;5;173mscarf[39m[38;5;111m@[39m[38;5;111mnpm:1.4.0[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9658903Z [93m➤[39m YN0004: │ [38;5;166m@swc/[39m[38;5;173mcore[39m[38;5;111m@[39m[38;5;111mnpm:1.13.3 [492e0][39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9660605Z [93m➤[39m YN0004: │ [38;5;166m@swc/[39m[38;5;173mcore[39m[38;5;111m@[39m[38;5;111mnpm:1.13.3 [655a6][39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9661995Z [93m➤[39m YN0004: │ [38;5;166m@swc/[39m[38;5;173mcore[39m[38;5;111m@[39m[38;5;111mnpm:1.15.40 [66fbd][39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9663467Z [93m➤[39m YN0004: │ [38;5;166m@tree-sitter-grammars/[39m[38;5;173mtree-sitter-yaml[39m[38;5;111m@[39m[38;5;111mnpm:0.7.1 [c2cf0][39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9664804Z [93m➤[39m YN0004: │ [38;5;173mcore-js-pure[39m[38;5;111m@[39m[38;5;111mnpm:3.30.2[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9668338Z [93m➤[39m YN0004: │ [38;5;173mcore-js[39m[38;5;111m@[39m[38;5;111mnpm:2.6.12[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9669634Z [93m➤[39m YN0004: │ [38;5;173mcore-js[39m[38;5;111m@[39m[38;5;111mnpm:3.44.0[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9670818Z [93m➤[39m YN0004: │ [38;5;173mesbuild[39m[38;5;111m@[39m[38;5;111mnpm:0.25.8[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9671981Z [93m➤[39m YN0004: │ [38;5;173mesbuild[39m[38;5;111m@[39m[38;5;111mnpm:0.27.7[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9673139Z [93m➤[39m YN0004: │ [38;5;173mesbuild[39m[38;5;111m@[39m[38;5;111mnpm:0.28.1[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9674276Z [93m➤[39m YN0004: │ [38;5;173mnx[39m[38;5;111m@[39m[38;5;111mnpm:22.7.7 [162b6][39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9675393Z [93m➤[39m YN0004: │ [38;5;173mprotobufjs[39m[38;5;111m@[39m[38;5;111mnpm:7.6.6[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9676727Z [93m➤[39m YN0004: │ [38;5;173mtree-sitter-json[39m[38;5;111m@[39m[38;5;111mnpm:0.24.8 [b5c6f][39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9677870Z [93m➤[39m YN0004: │ [38;5;173mtree-sitter[39m[38;5;111m@[39m[38;5;111mnpm:0.21.1[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9678969Z [93m➤[39m YN0004: │ [38;5;173mtree-sitter[39m[38;5;111m@[39m[38;5;111mnpm:0.22.4[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:00.9680146Z [93m➤[39m YN0004: │ [38;5;173munrs-resolver[39m[38;5;111m@[39m[38;5;111mnpm:1.11.1[39m lists build scripts, but all build scripts have been disabled.
+e2e	Install yarn dependencies	2026-11-10T17:22:01.2369207Z [94m➤[39m YN0007: │ [38;5;173mmsw[39m[38;5;111m@[39m[38;5;111mnpm:2.10.4 [c815a][39m must be built because it never has been before or the last one failed
+e2e	Install yarn dependencies	2026-11-10T17:22:02.0068234Z ##[endgroup]
+e2e	Install yarn dependencies	2026-11-10T17:22:02.0071829Z [94m➤[39m [90mYN0000[39m: └ Completed in 53s 463ms
+e2e	Install yarn dependencies	2026-11-10T17:22:02.7835122Z [93m➤[39m YN0000: · Done with warnings in 1m 34s
+e2e	Install yarn dependencies	2026-11-10T17:22:04.0083621Z ##[end-action id=__self_2.__run_2;outcome=success;conclusion=success;duration_ms=95605]
+e2e	Build frontend	﻿2026-11-10T17:22:04.0202946Z ##[group]Run yarn themes-generate
+e2e	Build frontend	2026-11-10T17:22:04.0203329Z [36;1myarn themes-generate[0m
+e2e	Build frontend	2026-11-10T17:22:04.0203664Z [36;1myarn nx run-many -t build --projects='tag:scope:plugin,@test-plugins/*'[0m
+e2e	Build frontend	2026-11-10T17:22:04.0204069Z [36;1myarn build:rspack[0m
+e2e	Build frontend	2026-11-10T17:22:04.0259180Z shell: /usr/bin/bash -e {0}
+e2e	Build frontend	2026-11-10T17:22:04.0259456Z env:
+e2e	Build frontend	2026-11-10T17:22:04.0259695Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Build frontend	2026-11-10T17:22:04.0260014Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Build frontend	2026-11-10T17:22:04.0260200Z   GOTOOLCHAIN: local
+e2e	Build frontend	2026-11-10T17:22:04.0260365Z   NO_SOURCEMAP: 1
+e2e	Build frontend	2026-11-10T17:22:04.0260536Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:22:09.0478297Z Successfully generated theme schema
+e2e	Build frontend	2026-11-10T17:22:17.3897157Z 
+e2e	Build frontend	2026-11-10T17:22:17.3928391Z [7m[1m[36m NX [39m[22m[27m  [36mRunning target [1mbuild[22m for 8 projects:[39m
+e2e	Build frontend	2026-11-10T17:22:17.3947153Z 
+e2e	Build frontend	2026-11-10T17:22:17.4007865Z [2m-[22m @grafana-plugins/grafana-testdata-datasource
+e2e	Build frontend	2026-11-10T17:22:17.4052236Z [2m-[22m @grafana-plugins/grafana-azure-monitor-datasource
+e2e	Build frontend	2026-11-10T17:22:17.4087803Z [2m-[22m @grafana-plugins/grafana-cloudwatch-datasource
+e2e	Build frontend	2026-11-10T17:22:17.4137731Z [2m-[22m @grafana-plugins/graphite
+e2e	Build frontend	2026-11-10T17:22:17.4170425Z [2m-[22m @test-plugins/extensions-test-app
+e2e	Build frontend	2026-11-10T17:22:17.4177290Z [2m-[22m @test-plugins/grafana-e2etest-datasource
+e2e	Build frontend	2026-11-10T17:22:17.4177791Z [2m-[22m @test-plugins/grafana-e2etest-panel
+e2e	Build frontend	2026-11-10T17:22:17.4178184Z [2m-[22m @test-plugins/grafana-e2etest-app
+e2e	Build frontend	2026-11-10T17:22:17.4178899Z 
+e2e	Build frontend	2026-11-10T17:22:17.4179024Z [2m[36m[39m[22m
+e2e	Build frontend	2026-11-10T17:22:36.6707227Z 
+e2e	Build frontend	2026-11-10T17:22:36.6738771Z ##[group]✅ [2m> [22m[2mnx run[22m @grafana-plugins/grafana-testdata-datasource:build
+e2e	Build frontend	2026-11-10T17:22:36.6776938Z 
+e2e	Build frontend	2026-11-10T17:22:36.6867854Z 13 assets
+e2e	Build frontend	2026-11-10T17:22:36.6933896Z 264 modules
+e2e	Build frontend	2026-11-10T17:22:36.6987430Z 
+e2e	Build frontend	2026-11-10T17:22:36.7010886Z [1m[33mWARNING[39m[22m in [1masset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+e2e	Build frontend	2026-11-10T17:22:36.7178059Z This can impact web performance.
+e2e	Build frontend	2026-11-10T17:22:36.7252407Z Assets: 
+e2e	Build frontend	2026-11-10T17:22:36.7308075Z   module.js (246 KiB)[39m[22m
+e2e	Build frontend	2026-11-10T17:22:36.7347463Z 
+e2e	Build frontend	2026-11-10T17:22:36.7408286Z [1m[33mWARNING[39m[22m in [1mentrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:22:36.7447186Z Entrypoints:
+e2e	Build frontend	2026-11-10T17:22:36.7500234Z   module (246 KiB)
+e2e	Build frontend	2026-11-10T17:22:36.7547411Z       module.js
+e2e	Build frontend	2026-11-10T17:22:36.7647690Z [39m[22m
+e2e	Build frontend	2026-11-10T17:22:36.7755161Z 
+e2e	Build frontend	2026-11-10T17:22:36.7813632Z [1m[33mWARNING[39m[22m in [1mwebpack performance recommendations: 
+e2e	Build frontend	2026-11-10T17:22:36.7868041Z You can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.
+e2e	Build frontend	2026-11-10T17:22:36.7908061Z For more info visit https://webpack.js.org/guides/code-splitting/[39m[22m
+e2e	Build frontend	2026-11-10T17:22:36.7998651Z 
+e2e	Build frontend	2026-11-10T17:22:36.8014363Z webpack 5.105.0 compiled with [1m[33m3 warnings[39m[22m in 8430 ms
+e2e	Build frontend	2026-11-10T17:22:52.7728141Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:22:52.7788220Z ##[group]✅ [2m> [22m[2mnx run[22m @grafana-plugins/graphite:build
+e2e	Build frontend	2026-11-10T17:22:52.7841515Z 
+e2e	Build frontend	2026-11-10T17:22:52.7897765Z 8 assets
+e2e	Build frontend	2026-11-10T17:22:52.7987472Z 245 modules
+e2e	Build frontend	2026-11-10T17:22:52.8068157Z webpack 5.105.0 compiled [1m[32msuccessfully[39m[22m in 9631 ms
+e2e	Build frontend	2026-11-10T17:22:53.4947768Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:22:53.5008445Z ##[group]✅ [2m> [22m[2mnx run[22m @grafana-plugins/grafana-azure-monitor-datasource:build
+e2e	Build frontend	2026-11-10T17:22:53.5108335Z 
+e2e	Build frontend	2026-11-10T17:22:53.5178681Z 59 assets
+e2e	Build frontend	2026-11-10T17:22:53.5237672Z 1231 modules
+e2e	Build frontend	2026-11-10T17:22:53.5466914Z 
+e2e	Build frontend	2026-11-10T17:22:53.5498319Z [1m[33mWARNING[39m[22m in [1masset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+e2e	Build frontend	2026-11-10T17:22:53.5557451Z This can impact web performance.
+e2e	Build frontend	2026-11-10T17:22:53.5617432Z Assets: 
+e2e	Build frontend	2026-11-10T17:22:53.5688094Z   module.js (499 KiB)
+e2e	Build frontend	2026-11-10T17:22:53.5757513Z   dashboards/adx.json (272 KiB)
+e2e	Build frontend	2026-11-10T17:22:53.5870144Z   img/azure_monitor_cpu.png (253 KiB)
+e2e	Build frontend	2026-11-10T17:22:53.5983092Z   img/contoso_loans_grafana_dashboard.png (251 KiB)[39m[22m
+e2e	Build frontend	2026-11-10T17:22:53.5990089Z 
+e2e	Build frontend	2026-11-10T17:22:53.6048438Z [1m[33mWARNING[39m[22m in [1mentrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:22:53.6149891Z Entrypoints:
+e2e	Build frontend	2026-11-10T17:22:53.6247139Z   module (499 KiB)
+e2e	Build frontend	2026-11-10T17:22:53.6257137Z       module.js
+e2e	Build frontend	2026-11-10T17:22:53.6257709Z [39m[22m
+e2e	Build frontend	2026-11-10T17:22:53.6257815Z 
+e2e	Build frontend	2026-11-10T17:22:53.6258189Z webpack 5.105.0 compiled with [1m[33m2 warnings[39m[22m in 22482 ms
+e2e	Build frontend	2026-11-10T17:23:10.0248157Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:23:10.0270888Z ##[group]✅ [2m> [22m[2mnx run[22m @test-plugins/extensions-test-app:build
+e2e	Build frontend	2026-11-10T17:23:10.0347062Z 
+e2e	Build frontend	2026-11-10T17:23:10.0399264Z 19 assets
+e2e	Build frontend	2026-11-10T17:23:10.0445728Z 99 modules
+e2e	Build frontend	2026-11-10T17:23:10.0467967Z webpack 5.105.0 compiled [1m[32msuccessfully[39m[22m in 5252 ms
+e2e	Build frontend	2026-11-10T17:23:11.4928087Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:23:11.4998540Z ##[group]✅ [2m> [22m[2mnx run[22m @test-plugins/grafana-e2etest-datasource:build
+e2e	Build frontend	2026-11-10T17:23:11.5067163Z 
+e2e	Build frontend	2026-11-10T17:23:11.5068145Z 10 assets
+e2e	Build frontend	2026-11-10T17:23:11.5068410Z 61 modules
+e2e	Build frontend	2026-11-10T17:23:11.5069154Z webpack 5.105.0 compiled [1m[32msuccessfully[39m[22m in 4622 ms
+e2e	Build frontend	2026-11-10T17:23:24.7047802Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:23:24.7157925Z ##[group]✅ [2m> [22m[2mnx run[22m @test-plugins/grafana-e2etest-app:build
+e2e	Build frontend	2026-11-10T17:23:24.7158611Z 
+e2e	Build frontend	2026-11-10T17:23:24.7247444Z 6 assets
+e2e	Build frontend	2026-11-10T17:23:24.7317272Z 10 modules
+e2e	Build frontend	2026-11-10T17:23:24.7329226Z webpack 5.105.0 compiled [1m[32msuccessfully[39m[22m in 1495 ms
+e2e	Build frontend	2026-11-10T17:23:24.8677828Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:23:24.8738123Z ##[group]✅ [2m> [22m[2mnx run[22m @test-plugins/grafana-e2etest-panel:build
+e2e	Build frontend	2026-11-10T17:23:24.8766725Z 
+e2e	Build frontend	2026-11-10T17:23:24.8857386Z 10 assets
+e2e	Build frontend	2026-11-10T17:23:24.8877178Z 57 modules
+e2e	Build frontend	2026-11-10T17:23:24.8937957Z webpack 5.105.0 compiled [1m[32msuccessfully[39m[22m in 3949 ms
+e2e	Build frontend	2026-11-10T17:23:49.4011239Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:23:49.4065789Z ##[group]✅ [2m> [22m[2mnx run[22m @grafana-plugins/grafana-cloudwatch-datasource:build
+e2e	Build frontend	2026-11-10T17:23:49.4166838Z 
+e2e	Build frontend	2026-11-10T17:23:49.4257453Z 97 assets
+e2e	Build frontend	2026-11-10T17:23:49.4389687Z 2481 modules
+e2e	Build frontend	2026-11-10T17:23:49.4507305Z 
+e2e	Build frontend	2026-11-10T17:23:49.4558511Z [1m[33mWARNING[39m[22m in [1masset size limit: The following asset(s) exceed the recommended size limit (244 KiB).
+e2e	Build frontend	2026-11-10T17:23:49.4647623Z This can impact web performance.
+e2e	Build frontend	2026-11-10T17:23:49.4748389Z Assets: 
+e2e	Build frontend	2026-11-10T17:23:49.4820727Z   module.js (864 KiB)
+e2e	Build frontend	2026-11-10T17:23:49.4907815Z   2455.js (3.38 MiB)[39m[22m
+e2e	Build frontend	2026-11-10T17:23:49.4989743Z 
+e2e	Build frontend	2026-11-10T17:23:49.5017957Z [1m[33mWARNING[39m[22m in [1mentrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (244 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:23:49.5037024Z Entrypoints:
+e2e	Build frontend	2026-11-10T17:23:49.5157503Z   module (864 KiB)
+e2e	Build frontend	2026-11-10T17:23:49.5267587Z       module.js
+e2e	Build frontend	2026-11-10T17:23:49.5357854Z [39m[22m
+e2e	Build frontend	2026-11-10T17:23:49.5424719Z 
+e2e	Build frontend	2026-11-10T17:23:49.5516770Z webpack 5.105.0 compiled with [1m[33m2 warnings[39m[22m in 77327 ms
+e2e	Build frontend	2026-11-10T17:23:49.5627287Z ##[endgroup]
+e2e	Build frontend	2026-11-10T17:23:49.5657155Z [2m[32m[39m[22m
+e2e	Build frontend	2026-11-10T17:23:49.5697307Z 
+e2e	Build frontend	2026-11-10T17:23:49.5728039Z [7m[1m[32m NX [39m[22m[27m  [32mSuccessfully ran target [1mbuild[22m for 8 projects[39m
+e2e	Build frontend	2026-11-10T17:23:49.5777334Z 
+e2e	Build frontend	2026-11-10T17:23:49.5806755Z 
+e2e	Build frontend	2026-11-10T17:24:39.7137722Z grafana:
+e2e	Build frontend	2026-11-10T17:24:39.7308212Z   [1m[33mWARNING[39m[22m in [33m⚠[0m asset size limit: The following asset(s) exceed the recommended size limit (300.000 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:24:39.7340546Z     [2m│[0m Assets:
+e2e	Build frontend	2026-11-10T17:24:39.7457985Z     [2m│[0m   76025.52cf9295421db2ab.js (692.753 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.7538012Z     [2m│[0m   static/img/fontawesome-webfont.da909aa0.svg (433.964 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.7612999Z     [2m│[0m   28640.639061fb7e74070d.js (705.450 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.7658822Z     [2m│[0m   img/native-histograms/DarkModeHeatmapNativeHistogram.png (372.276 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.7778005Z     [2m│[0m   58949.1e02ba2cc950253e.js (7.440 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.7838101Z     [2m│[0m   img/insights-screenshot.png (372.629 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.7842447Z     [2m│[0m   11114.558cfc18a87e7fc1.js (769.272 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.7998103Z     [2m│[0m   13865.dda7ceefa8b42ef6.js (720.684 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8088189Z     [2m│[0m   66167.0a99811c47d8ef79.js (737.695 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8180475Z     [2m│[0m   static/img/permissions-screenshot.8cd46ef2.png (300.216 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8237901Z     [2m│[0m   mermaid.41b389b7a35b45d1.js (542.390 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8318409Z     [2m│[0m   img/bg/p2.png (313.223 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8408124Z     [2m│[0m   47738.11ca0081f5d6c46f.js (626.947 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8461629Z     [2m│[0m   img/bg/p1.png (670.220 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8477848Z     [2m│[0m   canvasPanel.cbd7eaa0deb5a009.js (496.668 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8537853Z     [2m│[0m   72352.f603bbad694482a5.js (1.771 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.8562724Z     [2m│[0m   96204.e92dd6ef84137e1f.js (601.354 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8618296Z     [2m│[0m   img/login_background_dark.svg (483.135 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8663005Z     [2m│[0m   75545.093c17c404da268d.js (743.972 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8707989Z     [2m│[0m   71912.438ccc2af57017c2.js (669.506 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8764215Z     [2m│[0m   22491.2f1dc9b406f26caf.js (4.362 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.8787902Z     [2m│[0m   98441.5e82fae0022fbece.js (425.461 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8847938Z     [2m│[0m   28239.e9c6b99eeab56cfe.js (1019.374 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8867579Z     [2m│[0m   4495.92dd4eac55611d70.js (648.333 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8942028Z     [2m│[0m   img/login_background_light.svg (502.299 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.8958303Z     [2m│[0m   img/native-histograms/LightModeHeatmapNativeHistogram.png (371.219 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9018115Z     [2m│[0m   img/bg/p6.png (359.758 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9067052Z     [2m│[0m   img/permissions-screenshot.png (300.216 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9117979Z     [2m│[0m   22468.5a2a7d84bcc9186f.js (2.786 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.9134985Z     [2m│[0m   44950.fda4037dcf63048e.js (419.988 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9180645Z     [2m│[0m   86015.a1037ca4fad4b17c.js (595.560 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9228157Z     [2m│[0m   static/img/assistant-hero.ab614a80.png (759.693 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9287702Z     [2m│[0m   64556.ae2faaf4bcdb2de2.js (867.060 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9317753Z     [2m│[0m   1925.5628d1d1651b1211.js (753.157 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9369566Z     [2m│[0m   43351.ea6d23a63c51d609.js (601.167 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9427825Z     [2m│[0m   vis-network.9261fca582ba94e1.js (393.938 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9457842Z     [2m│[0m   91645.db32f6464e41281f.js (704.709 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9497886Z     [2m│[0m   static/img/insights-screenshot.fcaef508.png (372.629 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9508841Z     [2m│[0m   71479.33a5ef71fec0f711.js (708.272 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9509629Z     [2m│[0m   371.e2c35264b04d83fa.js (2.014 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.9510269Z     [2m│[0m   static/img/library-of-things.3a34c461.png (571.637 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9510926Z     [2m│[0m   89068.cb70f233084465ec.js (697.569 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9511617Z     [2m│[0m   35661.e16ca672cbc1fff0.js (714.676 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9512196Z     [2m│[0m   27785.758906169c6a9d87.js (379.374 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9512801Z     [2m│[0m   21445.f0fad2731549bb8e.js (680.800 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9513382Z     [2m│[0m   92441.fef48f668b498111.js (700.213 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9513915Z     [2m│[0m   95553.1e6e709816781a0b.js (707.815 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9514450Z     [2m│[0m   74573.995a21c41b79a5ec.js (716.562 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9515679Z     [2m│[0m   80783.13aeae90d2f42296.js (705.534 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9516211Z     [2m│[0m   50306.bd77f52c99154fd8.js (816.289 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9516944Z     [2m│[0m   71448.971e2a6c1c86fbe5.js (3.316 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.9517574Z     [2m│[0m   static/img/dynamic-dashboards.8553b87b.png (447.620 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9547480Z     [2m│[0m   static/img/git-sync.37badd9a.png (528.510 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9570619Z     [2m│[0m   74936.f614ba933b774b38.js (650.475 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9597276Z   [0m
+e2e	Build frontend	2026-11-10T17:24:39.9626745Z 
+e2e	Build frontend	2026-11-10T17:24:39.9658136Z   [1m[33mWARNING[39m[22m in [33m⚠[0m entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (500.000 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:24:39.9659292Z     [2m│[0m Entrypoints:
+e2e	Build frontend	2026-11-10T17:24:39.9687284Z     [2m│[0m   app (4.954 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.9709720Z     [2m│[0m       runtime.739dd907743c79f2.js
+e2e	Build frontend	2026-11-10T17:24:39.9737323Z     [2m│[0m       371.e2c35264b04d83fa.js
+e2e	Build frontend	2026-11-10T17:24:39.9767275Z     [2m│[0m       22468.5a2a7d84bcc9186f.js
+e2e	Build frontend	2026-11-10T17:24:39.9797173Z     [2m│[0m       app.090ecbc8ca1e79d6.js
+e2e	Build frontend	2026-11-10T17:24:39.9797851Z     [2m│[0m       grafana.app.7ca5f36f6102524c.css
+e2e	Build frontend	2026-11-10T17:24:39.9827025Z   [0m
+e2e	Build frontend	2026-11-10T17:24:39.9856603Z 
+e2e	Build frontend	2026-11-10T17:24:39.9858026Z   [1m[33mWARNING[39m[22m in [1m./node_modules/monaco-editor/esm/vs/language/typescript/ts.worker.js[39m[22m
+e2e	Build frontend	2026-11-10T17:24:39.9887238Z     [33m⚠[0m Module parse warning:
+e2e	Build frontend	2026-11-10T17:24:39.9911796Z   [2m  ╰─▶ [0m  [33m⚠[0m "__dirname" is used and has been mocked. Remove it from your code, or set `node.__dirname` to disable this warning.
+e2e	Build frontend	2026-11-10T17:24:39.9918874Z         
+e2e	Build frontend	2026-11-10T17:24:39.9919306Z   [0m
+e2e	Build frontend	2026-11-10T17:24:39.9919543Z 
+e2e	Build frontend	2026-11-10T17:24:39.9920023Z   [1mgrafana[39m[22m compiled with [1m[33m3 warnings[39m[22m in 47.32 s
+e2e	Build frontend	2026-11-10T17:24:39.9920424Z 
+e2e	Build frontend	2026-11-10T17:24:39.9920643Z swagger:
+e2e	Build frontend	2026-11-10T17:24:39.9921652Z   [1m[33mWARNING[39m[22m in [33m⚠[0m asset size limit: The following asset(s) exceed the recommended size limit (300.000 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:24:39.9922420Z     [2m│[0m Assets:
+e2e	Build frontend	2026-11-10T17:24:39.9922899Z     [2m│[0m   app.c7ac654d2a9e873d.js (2.896 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.9923596Z     [2m│[0m   107.8c80266e1f09b887.js (855.401 KiB)
+e2e	Build frontend	2026-11-10T17:24:39.9923983Z   [0m
+e2e	Build frontend	2026-11-10T17:24:39.9924205Z 
+e2e	Build frontend	2026-11-10T17:24:39.9925150Z   [1m[33mWARNING[39m[22m in [33m⚠[0m entrypoint size limit: The following entrypoint(s) combined asset size exceeds the recommended limit (500.000 KiB). This can impact web performance.
+e2e	Build frontend	2026-11-10T17:24:39.9925990Z     [2m│[0m Entrypoints:
+e2e	Build frontend	2026-11-10T17:24:39.9926515Z     [2m│[0m   app (3.071 MiB)
+e2e	Build frontend	2026-11-10T17:24:39.9926977Z     [2m│[0m       app.c7ac654d2a9e873d.js
+e2e	Build frontend	2026-11-10T17:24:39.9927467Z     [2m│[0m       app.59d92a619468c98b.css
+e2e	Build frontend	2026-11-10T17:24:39.9927838Z   [0m
+e2e	Build frontend	2026-11-10T17:24:39.9928041Z 
+e2e	Build frontend	2026-11-10T17:24:39.9928490Z   [1mswagger[39m[22m compiled with [1m[33m2 warnings[39m[22m in 19.32 s
+e2e	Build frontend	2026-11-10T17:24:39.9928866Z 
+e2e	Build frontend	2026-11-10T17:24:39.9929051Z boot:
+e2e	Build frontend	2026-11-10T17:24:39.9929544Z   [1mboot[39m[22m compiled [1m[32msuccessfully[39m[22m in 1.54 s
+e2e	Wait for backend build	﻿2026-11-10T17:24:40.5065120Z ##[group]Run while [ ! -f go-build.exit ]; do sleep 5; done
+e2e	Wait for backend build	2026-11-10T17:24:40.5065653Z [36;1mwhile [ ! -f go-build.exit ]; do sleep 5; done[0m
+e2e	Wait for backend build	2026-11-10T17:24:40.5065993Z [36;1mtail -20 go-build.log[0m
+e2e	Wait for backend build	2026-11-10T17:24:40.5066232Z [36;1mexit "$(cat go-build.exit)"[0m
+e2e	Wait for backend build	2026-11-10T17:24:40.5252361Z shell: /usr/bin/bash -e {0}
+e2e	Wait for backend build	2026-11-10T17:24:40.5252656Z env:
+e2e	Wait for backend build	2026-11-10T17:24:40.5252944Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Wait for backend build	2026-11-10T17:24:40.5253289Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Wait for backend build	2026-11-10T17:24:40.5253531Z   GOTOOLCHAIN: local
+e2e	Wait for backend build	2026-11-10T17:24:40.5253727Z ##[endgroup]
+e2e	Wait for backend build	2026-11-10T17:28:40.8239064Z go: downloading github.com/bahlo/generic-list-go v0.2.0
+e2e	Wait for backend build	2026-11-10T17:28:40.8239641Z go: downloading github.com/buger/jsonparser v1.6.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8240046Z go: downloading go.yaml.in/yaml/v4 v4.0.0-rc.6
+e2e	Wait for backend build	2026-11-10T17:28:40.8240559Z go: downloading github.com/klauspost/cpuid v1.3.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8241006Z go: downloading github.com/agext/levenshtein v1.2.3
+e2e	Wait for backend build	2026-11-10T17:28:40.8241495Z go: downloading github.com/mitchellh/go-wordwrap v1.0.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8241733Z go: downloading modernc.org/mathutil v1.7.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8241962Z go: downloading modernc.org/memory v1.12.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8242187Z go: downloading github.com/dennwc/varint v1.0.0
+e2e	Wait for backend build	2026-11-10T17:28:40.8242446Z go: downloading github.com/bufbuild/protocompile v0.14.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8242773Z go: downloading github.com/googleapis/enterprise-certificate-proxy v0.3.20
+e2e	Wait for backend build	2026-11-10T17:28:40.8243147Z go: downloading github.com/envoyproxy/go-control-plane/envoy v1.37.0
+e2e	Wait for backend build	2026-11-10T17:28:40.8243424Z go: downloading github.com/tidwall/match v1.1.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8243659Z go: downloading github.com/tidwall/pretty v1.2.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8243901Z go: downloading github.com/mitchellh/go-homedir v1.1.0
+e2e	Wait for backend build	2026-11-10T17:28:40.8244223Z go: downloading github.com/remyoudompheng/bigfft v0.0.0-20230129092748-24d4a6f8daec
+e2e	Wait for backend build	2026-11-10T17:28:40.8244530Z go: downloading github.com/spiffe/go-spiffe/v2 v2.8.1
+e2e	Wait for backend build	2026-11-10T17:28:40.8244807Z go: downloading github.com/envoyproxy/go-control-plane v0.14.0
+e2e	Wait for backend build	2026-11-10T17:28:40.8245121Z go: downloading github.com/cncf/xds/go v0.0.0-20260202195803-dba9d589def2
+e2e	Wait for backend build	2026-11-10T17:28:40.8245837Z if [ "linux" = "linux" ] && [ "amd64" = "amd64" ]; then cp ./bin/linux/amd64/grafana ./bin/grafana; fi
+e2e	Start Grafana server	﻿2026-11-10T17:28:40.8279903Z ##[group]Run mkdir -p grafana-server
+e2e	Start Grafana server	2026-11-10T17:28:40.8280427Z [36;1mmkdir -p grafana-server[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8280608Z [36;1mcp -r bin conf tools grafana-server/[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8280817Z [36;1mln -s "$PWD/public" grafana-server/public[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8281126Z [36;1mmkdir -p grafana-server/conf/provisioning/{datasources,dashboards,alerting,plugins}[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8281482Z [36;1mcp scripts/grafana-server/custom.ini grafana-server/conf/custom.ini[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8281805Z [36;1mcp devenv/datasources.yaml grafana-server/conf/provisioning/datasources/[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8282142Z [36;1mcp devenv/dashboards.yaml grafana-server/conf/provisioning/dashboards/[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8282457Z [36;1mcp devenv/alert_rules.yaml grafana-server/conf/provisioning/alerting/[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8282775Z [36;1mcp devenv/plugins.yaml grafana-server/conf/provisioning/plugins/[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8283021Z [36;1mmkdir -p grafana-server/data/plugins[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8283288Z [36;1mcp -r e2e-playwright/test-plugins/. grafana-server/data/plugins/[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8283530Z [36;1mgrafana-server/bin/grafana server \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8283720Z [36;1m  --homepath="$PWD/grafana-server" \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8283907Z [36;1m  cfg:server.http_port=3001 \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8284090Z [36;1m  > grafana-server/grafana.log 2>&1 &[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8284254Z [36;1m[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8284489Z [36;1m# A second server on a sub path with the Luxon date implementation, for the tests that need them[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8284782Z [36;1mmkdir -p grafana-server/data-subpath[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8284961Z [36;1mGF_SERVER_HTTP_PORT=3002 \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8285176Z [36;1mGF_SERVER_ROOT_URL=http://localhost:3002/grafana/ \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8285395Z [36;1mGF_SERVER_SERVE_FROM_SUB_PATH=true \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8285607Z [36;1mGF_PATHS_DATA="$PWD/grafana-server/data-subpath" \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8285845Z [36;1mGF_PATHS_PLUGINS="$PWD/grafana-server/data/plugins" \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8286079Z [36;1mGF_FEATURE_TOGGLES_ENABLE=datetime.useLuxon \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8286280Z [36;1mGF_AUTH_ANONYMOUS_ENABLED=true \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8286829Z [36;1mGF_AUTH_ANONYMOUS_ORG_ROLE=Admin \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8287014Z [36;1mgrafana-server/bin/grafana server \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8287200Z [36;1m  --homepath="$PWD/grafana-server" \[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8287401Z [36;1m  > grafana-server/grafana-subpath.log 2>&1 &[0m
+e2e	Start Grafana server	2026-11-10T17:28:40.8308927Z shell: /usr/bin/bash -e {0}
+e2e	Start Grafana server	2026-11-10T17:28:40.8309081Z env:
+e2e	Start Grafana server	2026-11-10T17:28:40.8309263Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Start Grafana server	2026-11-10T17:28:40.8309480Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Start Grafana server	2026-11-10T17:28:40.8309621Z   GOTOOLCHAIN: local
+e2e	Start Grafana server	2026-11-10T17:28:40.8309776Z   GF_AUTH_TOKEN_ROTATION_INTERVAL_MINUTES: 120
+e2e	Start Grafana server	2026-11-10T17:28:40.8309958Z ##[endgroup]
+e2e	Install Playwright browsers	﻿2026-11-10T17:28:45.5352641Z Prepare all required actions
+e2e	Install Playwright browsers	2026-11-10T17:28:45.5353194Z Getting action download info
+e2e	Install Playwright browsers	2026-11-10T17:28:45.7888416Z Download action repository 'actions/cache@caa296126883cff596d87d8935842f9db880ef25' (SHA:caa296126883cff596d87d8935842f9db880ef25)
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9710978Z ##[group]Run ./.github/actions/setup-playwright
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9711237Z env:
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9711503Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9711815Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9712017Z   GOTOOLCHAIN: local
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9712213Z ##[endgroup]
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9752297Z ##[start-action display=Get Playwright version;id=__self_3.version]
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9775127Z ##[group]Run set -euo pipefail
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9775463Z [36;1mset -euo pipefail[0m
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9775828Z [36;1mversion="$(jq -er '.devDependencies["@playwright/test"]' package.json)"[0m
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9776676Z [36;1mecho "version=$version" >> "$GITHUB_OUTPUT"[0m
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9800560Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9800916Z env:
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9801199Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9801536Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9801752Z   GOTOOLCHAIN: local
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9801957Z ##[endgroup]
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9947655Z ##[end-action id=__self_3.version;outcome=success;conclusion=success;duration_ms=19]
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9949901Z ##[start-action display=Cache Playwright browsers;id=__self_3.__actions_cache]
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9988937Z ##[group]Run actions/cache@caa296126883cff596d87d8935842f9db880ef25
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9989282Z with:
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9989480Z   path: ~/.cache/ms-playwright
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9989743Z   key: playwright-Linux-X64-1.56.1-chromium
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9990018Z   enableCrossOsArchive: false
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9990275Z   fail-on-cache-miss: false
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9990487Z   lookup-only: false
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9990705Z   save-always: false
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9990893Z env:
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9991148Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9991474Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9991688Z   GOTOOLCHAIN: local
+e2e	Install Playwright browsers	2026-11-10T17:28:45.9991884Z ##[endgroup]
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3728753Z Cache not found for input keys: playwright-Linux-X64-1.56.1-chromium
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3895171Z ##[end-action id=__self_3.__actions_cache;outcome=success;conclusion=success;duration_ms=394]
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3898271Z ##[start-action display=Install Playwright browsers;id=__self_3.__run]
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3921522Z ##[group]Run yarn playwright install chromium --with-deps
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3922011Z [36;1myarn playwright install chromium --with-deps[0m
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3949127Z shell: /usr/bin/bash --noprofile --norc -e -o pipefail {0}
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3949356Z env:
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3949558Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3949785Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3949944Z   GOTOOLCHAIN: local
+e2e	Install Playwright browsers	2026-11-10T17:28:46.3950134Z ##[endgroup]
+e2e	Install Playwright browsers	2026-11-10T17:28:48.4017913Z Installing dependencies...
+e2e	Install Playwright browsers	2026-11-10T17:28:48.4148408Z Switching to root user to install dependencies...
+e2e	Install Playwright browsers	2026-11-10T17:28:48.5948222Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+e2e	Install Playwright browsers	2026-11-10T17:28:48.7327543Z Hit:2 http://azure.archive.ubuntu.com/ubuntu noble InRelease
+e2e	Install Playwright browsers	2026-11-10T17:28:48.7375359Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble-updates InRelease [126 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:48.7393715Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble-backports InRelease [126 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:48.7445798Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble-security InRelease [126 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:48.8871599Z Get:6 https://packages.microsoft.com/ubuntu/24.04/prod noble InRelease [3600 B]
+e2e	Install Playwright browsers	2026-11-10T17:28:48.9809671Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble-updates/main amd64 Packages [1443 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0070643Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble-updates/main Translation-en [314 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0093730Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe amd64 Packages [1711 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0268308Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble-updates/universe Translation-en [344 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0297916Z Get:11 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted amd64 Packages [1879 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0499593Z Get:12 http://azure.archive.ubuntu.com/ubuntu noble-updates/restricted Translation-en [429 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0536249Z Get:13 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse amd64 Packages [50.7 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.0572757Z Get:14 http://azure.archive.ubuntu.com/ubuntu noble-updates/multiverse Translation-en [14.3 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.2050945Z Get:15 http://azure.archive.ubuntu.com/ubuntu noble-security/main amd64 Packages [1161 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.2808084Z Get:16 http://azure.archive.ubuntu.com/ubuntu noble-security/main Translation-en [234 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.3708077Z Get:17 http://azure.archive.ubuntu.com/ubuntu noble-security/universe amd64 Packages [1228 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.3725854Z Get:23 https://packages.microsoft.com/ubuntu/24.04/prod noble/main arm64 Packages [679 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.5045425Z Get:18 http://azure.archive.ubuntu.com/ubuntu noble-security/universe Translation-en [248 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.5107548Z Get:24 https://packages.microsoft.com/ubuntu/24.04/prod noble/main amd64 Packages [748 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.5108423Z Get:19 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted amd64 Packages [1729 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.7478061Z Get:20 http://azure.archive.ubuntu.com/ubuntu noble-security/restricted Translation-en [396 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.8378577Z Get:21 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse amd64 Packages [45.4 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:49.9134953Z Get:22 http://azure.archive.ubuntu.com/ubuntu noble-security/multiverse Translation-en [12.4 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:56.0949250Z Fetched 13.0 MB in 2s (6716 kB/s)
+e2e	Install Playwright browsers	2026-11-10T17:28:57.2026256Z Reading package lists...
+e2e	Install Playwright browsers	2026-11-10T17:28:57.2341777Z Reading package lists...
+e2e	Install Playwright browsers	2026-11-10T17:28:57.5697368Z Building dependency tree...
+e2e	Install Playwright browsers	2026-11-10T17:28:57.5706336Z Reading state information...
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8333377Z libasound2t64 is already the newest version (1.2.11-1ubuntu0.3).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8334568Z libasound2t64 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8335425Z libatk-bridge2.0-0t64 is already the newest version (2.52.0-1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8335921Z libatk-bridge2.0-0t64 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8336439Z libatk1.0-0t64 is already the newest version (2.52.0-1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8336825Z libatk1.0-0t64 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8337242Z libatspi2.0-0t64 is already the newest version (2.52.0-1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8337675Z libatspi2.0-0t64 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8338065Z libcairo2 is already the newest version (1.18.0-3build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8338451Z libcairo2 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8338859Z libcups2t64 is already the newest version (2.4.7-1.2ubuntu7.14).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8339243Z libcups2t64 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8339649Z libdbus-1-3 is already the newest version (1.14.10-4ubuntu4.1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8340027Z libdbus-1-3 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8340442Z libdrm2 is already the newest version (2.4.125-1ubuntu0.1~24.04.2).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8340825Z libdrm2 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8341215Z libgbm1 is already the newest version (25.2.8-0ubuntu0.24.04.4).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8341584Z libgbm1 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8341991Z libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.10).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8342392Z libglib2.0-0t64 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8342807Z libnspr4 is already the newest version (2:4.35-1.1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8343168Z libnspr4 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8344156Z libnss3 is already the newest version (2:3.98-1ubuntu0.3).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8344510Z libnss3 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8344903Z libpango-1.0-0 is already the newest version (1.52.1+ds-1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8345295Z libpango-1.0-0 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8345690Z libx11-6 is already the newest version (2:1.8.7-1ubuntu0.1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8346050Z libx11-6 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8346500Z libxcb1 is already the newest version (1.15-1ubuntu2).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8346844Z libxcb1 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8347235Z libxcomposite1 is already the newest version (1:0.4.5-1build3).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8347649Z libxcomposite1 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8348050Z libxdamage1 is already the newest version (1:1.1.6-1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8348585Z libxdamage1 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8348959Z libxext6 is already the newest version (2:1.3.4-1build2).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8349313Z libxext6 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8349685Z libxfixes3 is already the newest version (1:6.0.0-2build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8350050Z libxfixes3 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8350437Z libxkbcommon0 is already the newest version (1.6.0-1build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8350813Z libxkbcommon0 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8351203Z libxrandr2 is already the newest version (2:1.5.2-2build1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8351572Z libxrandr2 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8351949Z xvfb is already the newest version (2:21.1.12-1ubuntu1.9).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8352467Z fonts-noto-color-emoji is already the newest version (2.047-0ubuntu0.24.04.1).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8353005Z libfontconfig1 is already the newest version (2.15.0-1.1ubuntu2).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8353403Z libfontconfig1 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8353832Z libfreetype6 is already the newest version (2.13.2+dfsg-1ubuntu0.2).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8354241Z libfreetype6 set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8354635Z fonts-liberation is already the newest version (1:2.1.5-3).
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8355026Z fonts-liberation set to manually installed.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8355406Z The following additional packages will be installed:
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8355762Z   xfonts-encodings xfonts-utils
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8356015Z Recommended packages:
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8356294Z   fonts-ipafont-mincho fonts-tlwg-loma
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8570111Z The following NEW packages will be installed:
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8570684Z   fonts-freefont-ttf fonts-ipafont-gothic fonts-tlwg-loma-otf fonts-unifont
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8580111Z   fonts-wqy-zenhei xfonts-cyrillic xfonts-encodings xfonts-scalable
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8580824Z   xfonts-utils
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8793299Z 0 upgraded, 9 newly installed, 0 to remove and 39 not upgraded.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8794064Z Need to get 21.1 MB of archives.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8794618Z After this operation, 79.5 MB of additional disk space will be used.
+e2e	Install Playwright browsers	2026-11-10T17:28:57.8795105Z Get:1 file:/etc/apt/apt-mirrors.txt Mirrorlist [144 B]
+e2e	Install Playwright browsers	2026-11-10T17:28:57.9477196Z Get:2 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-ipafont-gothic all 00303-21ubuntu1 [3513 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:58.1425670Z Get:3 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 fonts-freefont-ttf all 20211204+svn4273-2 [5641 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:58.4193146Z Get:4 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-tlwg-loma-otf all 1:0.7.3-1 [107 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:58.4655170Z Get:5 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-unifont all 1:15.1.01-1build1 [2993 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:58.6139318Z Get:6 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 fonts-wqy-zenhei all 0.9.45-8 [7472 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:58.9787197Z Get:7 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-encodings all 1:1.0.5-0ubuntu2 [578 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:59.0318635Z Get:8 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-utils amd64 1:7.7+6build3 [94.4 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:59.0778316Z Get:9 http://azure.archive.ubuntu.com/ubuntu noble/universe amd64 xfonts-cyrillic all 1:1.0.5+nmu1 [384 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:59.1281608Z Get:10 http://azure.archive.ubuntu.com/ubuntu noble/main amd64 xfonts-scalable all 1:1.0.3-1.3 [304 kB]
+e2e	Install Playwright browsers	2026-11-10T17:28:59.5787986Z Fetched 21.1 MB in 1s (16.7 MB/s)
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6057889Z Selecting previously unselected package fonts-ipafont-gothic.
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6468234Z (Reading database ... 
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6471161Z (Reading database ... 5%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6471563Z (Reading database ... 10%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6471922Z (Reading database ... 15%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6472269Z (Reading database ... 20%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6472618Z (Reading database ... 25%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6472967Z (Reading database ... 30%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6473607Z (Reading database ... 35%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6473950Z (Reading database ... 40%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6474310Z (Reading database ... 45%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6474950Z (Reading database ... 50%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.6488844Z (Reading database ... 55%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.7774922Z (Reading database ... 60%
+e2e	Install Playwright browsers	2026-11-10T17:28:59.8886455Z (Reading database ... 65%
+e2e	Install Playwright browsers	2026-11-10T17:29:00.1293960Z (Reading database ... 70%
+e2e	Install Playwright browsers	2026-11-10T17:29:00.2852765Z (Reading database ... 75%
+e2e	Install Playwright browsers	2026-11-10T17:29:00.4299343Z (Reading database ... 80%
+e2e	Install Playwright browsers	2026-11-10T17:29:00.6219851Z (Reading database ... 85%
+e2e	Install Playwright browsers	2026-11-10T17:29:00.8767772Z (Reading database ... 90%
+e2e	Install Playwright browsers	2026-11-10T17:29:01.0473663Z (Reading database ... 95%
+e2e	Install Playwright browsers	2026-11-10T17:29:01.0474068Z (Reading database ... 100%
+e2e	Install Playwright browsers	2026-11-10T17:29:01.0474486Z (Reading database ... 215960 files and directories currently installed.)
+e2e	Install Playwright browsers	2026-11-10T17:29:01.0517873Z Preparing to unpack .../0-fonts-ipafont-gothic_00303-21ubuntu1_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.0646238Z Unpacking fonts-ipafont-gothic (00303-21ubuntu1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.3230662Z Selecting previously unselected package fonts-freefont-ttf.
+e2e	Install Playwright browsers	2026-11-10T17:29:01.3394975Z Preparing to unpack .../1-fonts-freefont-ttf_20211204+svn4273-2_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.3417713Z Unpacking fonts-freefont-ttf (20211204+svn4273-2) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.4693215Z Selecting previously unselected package fonts-tlwg-loma-otf.
+e2e	Install Playwright browsers	2026-11-10T17:29:01.4825899Z Preparing to unpack .../2-fonts-tlwg-loma-otf_1%3a0.7.3-1_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.4832748Z Unpacking fonts-tlwg-loma-otf (1:0.7.3-1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.5519922Z Selecting previously unselected package fonts-unifont.
+e2e	Install Playwright browsers	2026-11-10T17:29:01.5638576Z Preparing to unpack .../3-fonts-unifont_1%3a15.1.01-1build1_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.5646001Z Unpacking fonts-unifont (1:15.1.01-1build1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.7245400Z Selecting previously unselected package fonts-wqy-zenhei.
+e2e	Install Playwright browsers	2026-11-10T17:29:01.7363759Z Preparing to unpack .../4-fonts-wqy-zenhei_0.9.45-8_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:01.7524817Z Unpacking fonts-wqy-zenhei (0.9.45-8) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.2743101Z Selecting previously unselected package xfonts-encodings.
+e2e	Install Playwright browsers	2026-11-10T17:29:02.2884945Z Preparing to unpack .../5-xfonts-encodings_1%3a1.0.5-0ubuntu2_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.2891044Z Unpacking xfonts-encodings (1:1.0.5-0ubuntu2) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.3238279Z Selecting previously unselected package xfonts-utils.
+e2e	Install Playwright browsers	2026-11-10T17:29:02.3381914Z Preparing to unpack .../6-xfonts-utils_1%3a7.7+6build3_amd64.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.3388441Z Unpacking xfonts-utils (1:7.7+6build3) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.3827877Z Selecting previously unselected package xfonts-cyrillic.
+e2e	Install Playwright browsers	2026-11-10T17:29:02.3980878Z Preparing to unpack .../7-xfonts-cyrillic_1%3a1.0.5+nmu1_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.4007986Z Unpacking xfonts-cyrillic (1:1.0.5+nmu1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.4516902Z Selecting previously unselected package xfonts-scalable.
+e2e	Install Playwright browsers	2026-11-10T17:29:02.4697502Z Preparing to unpack .../8-xfonts-scalable_1%3a1.0.3-1.3_all.deb ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.4711260Z Unpacking xfonts-scalable (1:1.0.3-1.3) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5258581Z Setting up fonts-wqy-zenhei (0.9.45-8) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5403651Z Setting up fonts-freefont-ttf (20211204+svn4273-2) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5420526Z Setting up fonts-tlwg-loma-otf (1:0.7.3-1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5434609Z Setting up xfonts-encodings (1:1.0.5-0ubuntu2) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5452966Z Setting up fonts-ipafont-gothic (00303-21ubuntu1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5808887Z update-alternatives: using /usr/share/fonts/opentype/ipafont-gothic/ipag.ttf to provide /usr/share/fonts/truetype/fonts-japanese-gothic.ttf (fonts-japanese-gothic.ttf) in auto mode
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5826812Z Setting up fonts-unifont (1:15.1.01-1build1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5840761Z Setting up xfonts-utils (1:7.7+6build3) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.5888888Z Setting up xfonts-cyrillic (1:1.0.5+nmu1) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.6193811Z Setting up xfonts-scalable (1:1.0.3-1.3) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.6454120Z Processing triggers for man-db (2.12.0-4build2) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:02.6475762Z Not building database; man-db/auto-update is not 'true'.
+e2e	Install Playwright browsers	2026-11-10T17:29:02.6491501Z Processing triggers for fontconfig (2.15.0-1.1ubuntu2) ...
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5583006Z 
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5583747Z Running kernel seems to be up-to-date.
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5583931Z 
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5584005Z Restarting services...
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5650084Z 
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5650700Z Service restarts being deferred:
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5653432Z  systemctl restart hosted-compute-agent.service
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5653633Z 
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5653962Z No containers need to be restarted.
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5654127Z 
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5654303Z No user sessions are running outdated binaries.
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5654496Z 
+e2e	Install Playwright browsers	2026-11-10T17:29:03.5654754Z No VM guests are running outdated hypervisor (qemu) binaries on this host.
+e2e	Install Playwright browsers	2026-11-10T17:29:04.7614111Z Downloading Chromium 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-linux.zip
+e2e	Install Playwright browsers	2026-11-10T17:29:04.8865216Z |                                                                                |   0% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:04.9544168Z |■■■■■■■■                                                                        |  10% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:04.9849375Z |■■■■■■■■■■■■■■■■                                                                |  20% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.0186890Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.0593495Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.0878958Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.1231928Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.1488558Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.1794131Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.2124631Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:05.2473868Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 173.9 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.5095364Z Chromium 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium-1194
+e2e	Install Playwright browsers	2026-11-10T17:29:07.5099725Z Downloading FFMPEG playwright build v1011 from https://cdn.playwright.dev/dbazure/download/playwright/builds/ffmpeg/1011/ffmpeg-linux.zip
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6509543Z |                                                                                |   0% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6556210Z |■■■■■■■■                                                                        |  10% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6581834Z |■■■■■■■■■■■■■■■■                                                                |  20% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6595894Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6607830Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6620865Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6633528Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6641748Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6663468Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6672686Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.6677575Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 2.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.7120834Z FFMPEG playwright build v1011 downloaded to /home/runner/.cache/ms-playwright/ffmpeg-1011
+e2e	Install Playwright browsers	2026-11-10T17:29:07.7122924Z Downloading Chromium Headless Shell 141.0.7390.37 (playwright build v1194) from https://cdn.playwright.dev/dbazure/download/playwright/builds/chromium/1194/chromium-headless-shell-linux.zip
+e2e	Install Playwright browsers	2026-11-10T17:29:07.8223018Z |                                                                                |   0% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.8777688Z |■■■■■■■■                                                                        |  10% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.9204087Z |■■■■■■■■■■■■■■■■                                                                |  20% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:07.9616247Z |■■■■■■■■■■■■■■■■■■■■■■■■                                                        |  30% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.2081196Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                                |  40% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.2495899Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                        |  50% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.2947157Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                                |  60% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.3343922Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                        |  70% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.3746854Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■                |  80% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.4157726Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■        |  90% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:08.4689500Z |■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■| 100% of 104.3 MiB
+e2e	Install Playwright browsers	2026-11-10T17:29:09.6728934Z Chromium Headless Shell 141.0.7390.37 (playwright build v1194) downloaded to /home/runner/.cache/ms-playwright/chromium_headless_shell-1194
+e2e	Install Playwright browsers	2026-11-10T17:29:09.8103845Z ##[end-action id=__self_3.__run;outcome=success;conclusion=success;duration_ms=23420]
+e2e	Wait for Grafana server to start	﻿2026-11-10T17:29:09.8295521Z ##[group]Run for i in $(seq 1 120); do
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8295872Z [36;1mfor i in $(seq 1 120); do[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8296151Z [36;1m  curl -s -f http://localhost:3001/api/health > /dev/null && \[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8296622Z [36;1m    curl -s -f http://localhost:3002/grafana/api/health > /dev/null && exit 0[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8296849Z [36;1m  sleep 1[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8296971Z [36;1mdone[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8297172Z [36;1mtail -50 grafana-server/grafana.log grafana-server/grafana-subpath.log[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8297394Z [36;1mexit 1[0m
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8315210Z shell: /usr/bin/bash -e {0}
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8315379Z env:
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8315544Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8315744Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8315872Z   GOTOOLCHAIN: local
+e2e	Wait for Grafana server to start	2026-11-10T17:29:09.8316010Z ##[endgroup]
+e2e	Run e2e tests	﻿2026-11-10T17:29:09.9194089Z ##[group]Run yarn e2e:playwright --project=panels --project=dashboards --project=various 'panels-suite/(gauge|stat|timeseries|table-|panelEdit_(base|queries|toolbarActions|transforms)|state-timeline|status-history|barchart-|histogram|trend|xychart)' dashboards-suite/ 'various-suite/(inspect-drawer|keybinds)'
+e2e	Run e2e tests	2026-11-10T17:29:09.9195284Z [36;1myarn e2e:playwright --project=panels --project=dashboards --project=various 'panels-suite/(gauge|stat|timeseries|table-|panelEdit_(base|queries|toolbarActions|transforms)|state-timeline|status-history|barchart-|histogram|trend|xychart)' dashboards-suite/ 'various-suite/(inspect-drawer|keybinds)'[0m
+e2e	Run e2e tests	2026-11-10T17:29:09.9213458Z shell: /usr/bin/bash -e {0}
+e2e	Run e2e tests	2026-11-10T17:29:09.9213608Z env:
+e2e	Run e2e tests	2026-11-10T17:29:09.9213776Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Run e2e tests	2026-11-10T17:29:09.9213987Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Run e2e tests	2026-11-10T17:29:09.9214120Z   GOTOOLCHAIN: local
+e2e	Run e2e tests	2026-11-10T17:29:09.9214285Z   GRAFANA_URL: http://localhost:3001
+e2e	Run e2e tests	2026-11-10T17:29:09.9214490Z   GRAFANA_SUBPATH_URL: http://localhost:3002/grafana
+e2e	Run e2e tests	2026-11-10T17:29:09.9214660Z   CI: true
+e2e	Run e2e tests	2026-11-10T17:29:09.9214772Z ##[endgroup]
+e2e	Run e2e tests	2026-11-10T17:48:15.6576640Z ##[error]Process completed with exit code 1.
+e2e	Upload Playwright report	﻿2026-11-10T17:48:15.7907227Z ##[group]Run actions/upload-artifact@v4
+e2e	Upload Playwright report	2026-11-10T17:48:15.7907521Z with:
+e2e	Upload Playwright report	2026-11-10T17:48:15.7909585Z   name: playwright-report
+e2e	Upload Playwright report	2026-11-10T17:48:15.7912230Z   path: playwright-report/
+e2e	Upload Playwright report	test-results/
+e2e	Upload Playwright report	test-results.json
+e2e	Upload Playwright report	grafana-server/*.log
+e2e	Upload Playwright report	go-build.log
+e2e	Upload Playwright report	
+e2e	Upload Playwright report	2026-11-10T17:48:15.7916568Z   retention-days: 30
+e2e	Upload Playwright report	2026-11-10T17:48:15.7918951Z   if-no-files-found: warn
+e2e	Upload Playwright report	2026-11-10T17:48:15.7919167Z   compression-level: 6
+e2e	Upload Playwright report	2026-11-10T17:48:15.7921563Z   overwrite: false
+e2e	Upload Playwright report	2026-11-10T17:48:15.7923608Z   include-hidden-files: false
+e2e	Upload Playwright report	2026-11-10T17:48:15.7925849Z env:
+e2e	Upload Playwright report	2026-11-10T17:48:15.7926096Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Upload Playwright report	2026-11-10T17:48:15.7928146Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Upload Playwright report	2026-11-10T17:48:15.7933221Z   GOTOOLCHAIN: local
+e2e	Upload Playwright report	2026-11-10T17:48:15.7935761Z ##[endgroup]
+e2e	Upload Playwright report	2026-11-10T17:48:15.9318441Z (node:45285) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+e2e	Upload Playwright report	2026-11-10T17:48:15.9321289Z (Use `node --trace-deprecation ...` to show where the warning was created)
+e2e	Upload Playwright report	2026-11-10T17:48:16.2054910Z Multiple search paths detected. Calculating the least common ancestor of all paths
+e2e	Upload Playwright report	2026-11-10T17:48:16.2055848Z The least common ancestor is /home/runner/work/grafana-aaeb36/grafana-aaeb36. This will be the root directory of the artifact
+e2e	Upload Playwright report	2026-11-10T17:48:16.2056251Z With the provided path, there will be 1963 files uploaded
+e2e	Upload Playwright report	2026-11-10T17:48:16.2056686Z Artifact name is valid!
+e2e	Upload Playwright report	2026-11-10T17:48:16.2056851Z Root directory input is valid!
+e2e	Upload Playwright report	2026-11-10T17:48:16.5298891Z Beginning upload of artifact content to blob storage
+e2e	Upload Playwright report	2026-11-10T17:48:16.7535815Z (node:45285) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+e2e	Upload Playwright report	2026-11-10T17:48:17.4949306Z Uploaded bytes 8388608
+e2e	Upload Playwright report	2026-11-10T17:48:17.5893664Z Uploaded bytes 16777216
+e2e	Upload Playwright report	2026-11-10T17:48:17.7068700Z Uploaded bytes 25165824
+e2e	Upload Playwright report	2026-11-10T17:48:17.8270146Z Uploaded bytes 33554432
+e2e	Upload Playwright report	2026-11-10T17:48:17.9270208Z Uploaded bytes 41943040
+e2e	Upload Playwright report	2026-11-10T17:48:18.0144005Z Uploaded bytes 50331648
+e2e	Upload Playwright report	2026-11-10T17:48:18.1237113Z Uploaded bytes 58720256
+e2e	Upload Playwright report	2026-11-10T17:48:18.2643057Z Uploaded bytes 67108864
+e2e	Upload Playwright report	2026-11-10T17:48:18.4933529Z Uploaded bytes 75497472
+e2e	Upload Playwright report	2026-11-10T17:48:18.7334580Z Uploaded bytes 83886080
+e2e	Upload Playwright report	2026-11-10T17:48:18.7895226Z Uploaded bytes 92274688
+e2e	Upload Playwright report	2026-11-10T17:48:18.9789814Z Uploaded bytes 100663296
+e2e	Upload Playwright report	2026-11-10T17:48:19.1967825Z Uploaded bytes 109051904
+e2e	Upload Playwright report	2026-11-10T17:48:19.3808243Z Uploaded bytes 117440512
+e2e	Upload Playwright report	2026-11-10T17:48:19.5669096Z Uploaded bytes 125829120
+e2e	Upload Playwright report	2026-11-10T17:48:19.7909993Z Uploaded bytes 134217728
+e2e	Upload Playwright report	2026-11-10T17:48:20.1107761Z Uploaded bytes 142606336
+e2e	Upload Playwright report	2026-11-10T17:48:20.2506798Z Uploaded bytes 150994944
+e2e	Upload Playwright report	2026-11-10T17:48:20.4362538Z Uploaded bytes 159383552
+e2e	Upload Playwright report	2026-11-10T17:48:20.5412936Z Uploaded bytes 167772160
+e2e	Upload Playwright report	2026-11-10T17:48:20.7753102Z Uploaded bytes 176160768
+e2e	Upload Playwright report	2026-11-10T17:48:21.0195068Z Uploaded bytes 184549376
+e2e	Upload Playwright report	2026-11-10T17:48:21.2186713Z Uploaded bytes 192937984
+e2e	Upload Playwright report	2026-11-10T17:48:21.4181742Z Uploaded bytes 201326592
+e2e	Upload Playwright report	2026-11-10T17:48:21.5964488Z Uploaded bytes 209715200
+e2e	Upload Playwright report	2026-11-10T17:48:21.7976631Z Uploaded bytes 218103808
+e2e	Upload Playwright report	2026-11-10T17:48:22.0457630Z Uploaded bytes 226492416
+e2e	Upload Playwright report	2026-11-10T17:48:22.1940305Z Uploaded bytes 234881024
+e2e	Upload Playwright report	2026-11-10T17:48:22.4037745Z Uploaded bytes 243269632
+e2e	Upload Playwright report	2026-11-10T17:48:22.6022645Z Uploaded bytes 251658240
+e2e	Upload Playwright report	2026-11-10T17:48:22.7272638Z Uploaded bytes 260046848
+e2e	Upload Playwright report	2026-11-10T17:48:22.9950938Z Uploaded bytes 268435456
+e2e	Upload Playwright report	2026-11-10T17:48:23.0923689Z Uploaded bytes 276824064
+e2e	Upload Playwright report	2026-11-10T17:48:23.3248970Z Uploaded bytes 285212672
+e2e	Upload Playwright report	2026-11-10T17:48:23.5418191Z Uploaded bytes 293601280
+e2e	Upload Playwright report	2026-11-10T17:48:23.7031647Z Uploaded bytes 301989888
+e2e	Upload Playwright report	2026-11-10T17:48:23.8967680Z Uploaded bytes 310378496
+e2e	Upload Playwright report	2026-11-10T17:48:24.0755242Z Uploaded bytes 318767104
+e2e	Upload Playwright report	2026-11-10T17:48:24.2268015Z Uploaded bytes 327155712
+e2e	Upload Playwright report	2026-11-10T17:48:24.4497559Z Uploaded bytes 335544320
+e2e	Upload Playwright report	2026-11-10T17:48:24.5903586Z Uploaded bytes 343932928
+e2e	Upload Playwright report	2026-11-10T17:48:24.8217578Z Uploaded bytes 352321536
+e2e	Upload Playwright report	2026-11-10T17:48:24.9513074Z Uploaded bytes 360710144
+e2e	Upload Playwright report	2026-11-10T17:48:25.2136896Z Uploaded bytes 369098752
+e2e	Upload Playwright report	2026-11-10T17:48:25.3177280Z Uploaded bytes 377487360
+e2e	Upload Playwright report	2026-11-10T17:48:25.5767750Z Uploaded bytes 385875968
+e2e	Upload Playwright report	2026-11-10T17:48:25.6966567Z Uploaded bytes 394264576
+e2e	Upload Playwright report	2026-11-10T17:48:25.9360604Z Uploaded bytes 402653184
+e2e	Upload Playwright report	2026-11-10T17:48:26.1327671Z Uploaded bytes 411041792
+e2e	Upload Playwright report	2026-11-10T17:48:26.3531463Z Uploaded bytes 419430400
+e2e	Upload Playwright report	2026-11-10T17:48:26.5725940Z Uploaded bytes 427819008
+e2e	Upload Playwright report	2026-11-10T17:48:26.7135553Z Uploaded bytes 436207616
+e2e	Upload Playwright report	2026-11-10T17:48:26.8591353Z Uploaded bytes 444596224
+e2e	Upload Playwright report	2026-11-10T17:48:27.0694878Z Uploaded bytes 452984832
+e2e	Upload Playwright report	2026-11-10T17:48:27.1983939Z Uploaded bytes 461373440
+e2e	Upload Playwright report	2026-11-10T17:48:27.4408278Z Uploaded bytes 469762048
+e2e	Upload Playwright report	2026-11-10T17:48:27.5873860Z Uploaded bytes 478150656
+e2e	Upload Playwright report	2026-11-10T17:48:27.8133800Z Uploaded bytes 486539264
+e2e	Upload Playwright report	2026-11-10T17:48:27.9556047Z Uploaded bytes 494927872
+e2e	Upload Playwright report	2026-11-10T17:48:28.1593964Z Uploaded bytes 503316480
+e2e	Upload Playwright report	2026-11-10T17:48:28.2925265Z Uploaded bytes 511705088
+e2e	Upload Playwright report	2026-11-10T17:48:28.5514142Z Uploaded bytes 520093696
+e2e	Upload Playwright report	2026-11-10T17:48:28.6927540Z Uploaded bytes 528482304
+e2e	Upload Playwright report	2026-11-10T17:48:28.9133581Z Uploaded bytes 536870912
+e2e	Upload Playwright report	2026-11-10T17:48:29.1348981Z Uploaded bytes 545259520
+e2e	Upload Playwright report	2026-11-10T17:48:29.2617713Z Uploaded bytes 553648128
+e2e	Upload Playwright report	2026-11-10T17:48:29.4830587Z Uploaded bytes 562036736
+e2e	Upload Playwright report	2026-11-10T17:48:29.6659934Z Uploaded bytes 570425344
+e2e	Upload Playwright report	2026-11-10T17:48:29.8818691Z Uploaded bytes 578813952
+e2e	Upload Playwright report	2026-11-10T17:48:30.0477653Z Uploaded bytes 587202560
+e2e	Upload Playwright report	2026-11-10T17:48:30.2914796Z Uploaded bytes 595591168
+e2e	Upload Playwright report	2026-11-10T17:48:30.3366233Z Uploaded bytes 603979776
+e2e	Upload Playwright report	2026-11-10T17:48:30.6713279Z Uploaded bytes 612368384
+e2e	Upload Playwright report	2026-11-10T17:48:30.7100524Z Uploaded bytes 620756992
+e2e	Upload Playwright report	2026-11-10T17:48:31.0939986Z Uploaded bytes 629145600
+e2e	Upload Playwright report	2026-11-10T17:48:31.2449886Z Uploaded bytes 637534208
+e2e	Upload Playwright report	2026-11-10T17:48:31.6891892Z Uploaded bytes 645922816
+e2e	Upload Playwright report	2026-11-10T17:48:31.7277065Z Uploaded bytes 654311424
+e2e	Upload Playwright report	2026-11-10T17:48:31.9151695Z Uploaded bytes 662700032
+e2e	Upload Playwright report	2026-11-10T17:48:32.1954910Z Uploaded bytes 671088640
+e2e	Upload Playwright report	2026-11-10T17:48:32.2126654Z Uploaded bytes 679477248
+e2e	Upload Playwright report	2026-11-10T17:48:32.4371225Z Uploaded bytes 687865856
+e2e	Upload Playwright report	2026-11-10T17:48:32.6571049Z Uploaded bytes 696254464
+e2e	Upload Playwright report	2026-11-10T17:48:32.7577612Z Uploaded bytes 704643072
+e2e	Upload Playwright report	2026-11-10T17:48:32.7712135Z Uploaded bytes 713031680
+e2e	Upload Playwright report	2026-11-10T17:48:33.1386316Z Uploaded bytes 721420288
+e2e	Upload Playwright report	2026-11-10T17:48:33.4432062Z Uploaded bytes 729808896
+e2e	Upload Playwright report	2026-11-10T17:48:33.4564564Z Uploaded bytes 738197504
+e2e	Upload Playwright report	2026-11-10T17:48:33.4945758Z Uploaded bytes 746586112
+e2e	Upload Playwright report	2026-11-10T17:48:33.8420000Z Uploaded bytes 754974720
+e2e	Upload Playwright report	2026-11-10T17:48:34.1465273Z Uploaded bytes 763363328
+e2e	Upload Playwright report	2026-11-10T17:48:34.2235221Z Uploaded bytes 771751936
+e2e	Upload Playwright report	2026-11-10T17:48:34.5207277Z Uploaded bytes 780140544
+e2e	Upload Playwright report	2026-11-10T17:48:34.5512457Z Uploaded bytes 788529152
+e2e	Upload Playwright report	2026-11-10T17:48:34.5932548Z Uploaded bytes 796917760
+e2e	Upload Playwright report	2026-11-10T17:48:34.9834857Z Uploaded bytes 805306368
+e2e	Upload Playwright report	2026-11-10T17:48:35.3119209Z Uploaded bytes 813694976
+e2e	Upload Playwright report	2026-11-10T17:48:35.3243350Z Uploaded bytes 822083584
+e2e	Upload Playwright report	2026-11-10T17:48:35.6949239Z Uploaded bytes 830472192
+e2e	Upload Playwright report	2026-11-10T17:48:35.8556631Z Uploaded bytes 838860800
+e2e	Upload Playwright report	2026-11-10T17:48:35.8897665Z Uploaded bytes 847249408
+e2e	Upload Playwright report	2026-11-10T17:48:36.0763447Z Uploaded bytes 855638016
+e2e	Upload Playwright report	2026-11-10T17:48:36.0957601Z Uploaded bytes 864026624
+e2e	Upload Playwright report	2026-11-10T17:48:36.6227630Z Uploaded bytes 872415232
+e2e	Upload Playwright report	2026-11-10T17:48:36.6410780Z Uploaded bytes 880803840
+e2e	Upload Playwright report	2026-11-10T17:48:36.8960214Z Uploaded bytes 889192448
+e2e	Upload Playwright report	2026-11-10T17:48:37.2017529Z Uploaded bytes 897581056
+e2e	Upload Playwright report	2026-11-10T17:48:37.2128759Z Uploaded bytes 905969664
+e2e	Upload Playwright report	2026-11-10T17:48:37.3914493Z Uploaded bytes 914358272
+e2e	Upload Playwright report	2026-11-10T17:48:37.7114657Z Uploaded bytes 922746880
+e2e	Upload Playwright report	2026-11-10T17:48:37.7883492Z Uploaded bytes 931135488
+e2e	Upload Playwright report	2026-11-10T17:48:37.8135252Z Uploaded bytes 939524096
+e2e	Upload Playwright report	2026-11-10T17:48:37.9023362Z Uploaded bytes 947912704
+e2e	Upload Playwright report	2026-11-10T17:48:38.2473084Z Uploaded bytes 956301312
+e2e	Upload Playwright report	2026-11-10T17:48:38.3690777Z Uploaded bytes 964689920
+e2e	Upload Playwright report	2026-11-10T17:48:38.8292264Z Uploaded bytes 973078528
+e2e	Upload Playwright report	2026-11-10T17:48:38.9916837Z Uploaded bytes 981467136
+e2e	Upload Playwright report	2026-11-10T17:48:39.0507293Z Uploaded bytes 989855744
+e2e	Upload Playwright report	2026-11-10T17:48:39.1518166Z Uploaded bytes 998244352
+e2e	Upload Playwright report	2026-11-10T17:48:39.3346045Z Uploaded bytes 1006632960
+e2e	Upload Playwright report	2026-11-10T17:48:39.5231431Z Uploaded bytes 1015021568
+e2e	Upload Playwright report	2026-11-10T17:48:39.7191931Z Uploaded bytes 1023410176
+e2e	Upload Playwright report	2026-11-10T17:48:39.8137600Z Uploaded bytes 1031798784
+e2e	Upload Playwright report	2026-11-10T17:48:39.8891030Z Uploaded bytes 1040187392
+e2e	Upload Playwright report	2026-11-10T17:48:40.0242985Z Uploaded bytes 1048576000
+e2e	Upload Playwright report	2026-11-10T17:48:40.2630693Z Uploaded bytes 1056964608
+e2e	Upload Playwright report	2026-11-10T17:48:40.3838532Z Uploaded bytes 1065353216
+e2e	Upload Playwright report	2026-11-10T17:48:40.5686286Z Uploaded bytes 1073741824
+e2e	Upload Playwright report	2026-11-10T17:48:40.7285963Z Uploaded bytes 1082130432
+e2e	Upload Playwright report	2026-11-10T17:48:40.9219433Z Uploaded bytes 1090519040
+e2e	Upload Playwright report	2026-11-10T17:48:41.1309030Z Uploaded bytes 1098907648
+e2e	Upload Playwright report	2026-11-10T17:48:41.2822145Z Uploaded bytes 1107296256
+e2e	Upload Playwright report	2026-11-10T17:48:41.4756774Z Uploaded bytes 1115684864
+e2e	Upload Playwright report	2026-11-10T17:48:41.6320491Z Uploaded bytes 1124073472
+e2e	Upload Playwright report	2026-11-10T17:48:41.7906637Z Uploaded bytes 1132462080
+e2e	Upload Playwright report	2026-11-10T17:48:42.0482945Z Uploaded bytes 1140850688
+e2e	Upload Playwright report	2026-11-10T17:48:42.1608267Z Uploaded bytes 1149239296
+e2e	Upload Playwright report	2026-11-10T17:48:42.3300125Z Uploaded bytes 1157627904
+e2e	Upload Playwright report	2026-11-10T17:48:42.5121434Z Uploaded bytes 1166016512
+e2e	Upload Playwright report	2026-11-10T17:48:42.7214173Z Uploaded bytes 1174405120
+e2e	Upload Playwright report	2026-11-10T17:48:42.9082401Z Uploaded bytes 1182793728
+e2e	Upload Playwright report	2026-11-10T17:48:43.0910537Z Uploaded bytes 1191182336
+e2e	Upload Playwright report	2026-11-10T17:48:43.3389919Z Uploaded bytes 1199570944
+e2e	Upload Playwright report	2026-11-10T17:48:43.4873947Z Uploaded bytes 1207959552
+e2e	Upload Playwright report	2026-11-10T17:48:43.6411730Z Uploaded bytes 1216348160
+e2e	Upload Playwright report	2026-11-10T17:48:43.8596297Z Uploaded bytes 1224736768
+e2e	Upload Playwright report	2026-11-10T17:48:43.9767684Z Uploaded bytes 1233125376
+e2e	Upload Playwright report	2026-11-10T17:48:44.2210393Z Uploaded bytes 1241513984
+e2e	Upload Playwright report	2026-11-10T17:48:44.3996709Z Uploaded bytes 1249902592
+e2e	Upload Playwright report	2026-11-10T17:48:44.6547524Z Uploaded bytes 1258291200
+e2e	Upload Playwright report	2026-11-10T17:48:44.7559503Z Uploaded bytes 1266679808
+e2e	Upload Playwright report	2026-11-10T17:48:44.9770426Z Uploaded bytes 1275068416
+e2e	Upload Playwright report	2026-11-10T17:48:45.1104009Z Uploaded bytes 1283457024
+e2e	Upload Playwright report	2026-11-10T17:48:45.2802101Z Uploaded bytes 1291845632
+e2e	Upload Playwright report	2026-11-10T17:48:45.4352404Z Uploaded bytes 1300234240
+e2e	Upload Playwright report	2026-11-10T17:48:45.6217776Z Uploaded bytes 1308622848
+e2e	Upload Playwright report	2026-11-10T17:48:45.7967371Z Uploaded bytes 1317011456
+e2e	Upload Playwright report	2026-11-10T17:48:45.9895701Z Uploaded bytes 1325400064
+e2e	Upload Playwright report	2026-11-10T17:48:46.2091786Z Uploaded bytes 1333788672
+e2e	Upload Playwright report	2026-11-10T17:48:46.5114938Z Uploaded bytes 1342177280
+e2e	Upload Playwright report	2026-11-10T17:48:46.6512201Z Uploaded bytes 1350565888
+e2e	Upload Playwright report	2026-11-10T17:48:46.7943870Z Uploaded bytes 1358954496
+e2e	Upload Playwright report	2026-11-10T17:48:46.9835688Z Uploaded bytes 1367343104
+e2e	Upload Playwright report	2026-11-10T17:48:47.1884897Z Uploaded bytes 1375731712
+e2e	Upload Playwright report	2026-11-10T17:48:47.3824668Z Uploaded bytes 1384120320
+e2e	Upload Playwright report	2026-11-10T17:48:47.6039022Z Uploaded bytes 1392508928
+e2e	Upload Playwright report	2026-11-10T17:48:47.9811551Z Uploaded bytes 1400897536
+e2e	Upload Playwright report	2026-11-10T17:48:48.1911021Z Uploaded bytes 1409286144
+e2e	Upload Playwright report	2026-11-10T17:48:48.2703280Z Uploaded bytes 1417674752
+e2e	Upload Playwright report	2026-11-10T17:48:48.4952760Z Uploaded bytes 1426063360
+e2e	Upload Playwright report	2026-11-10T17:48:48.6885113Z Uploaded bytes 1434451968
+e2e	Upload Playwright report	2026-11-10T17:48:48.9119472Z Uploaded bytes 1442840576
+e2e	Upload Playwright report	2026-11-10T17:48:49.0715079Z Uploaded bytes 1451229184
+e2e	Upload Playwright report	2026-11-10T17:48:49.2859350Z Uploaded bytes 1459617792
+e2e	Upload Playwright report	2026-11-10T17:48:49.5084625Z Uploaded bytes 1468006400
+e2e	Upload Playwright report	2026-11-10T17:48:49.6414126Z Uploaded bytes 1476395008
+e2e	Upload Playwright report	2026-11-10T17:48:49.8163857Z Uploaded bytes 1484783616
+e2e	Upload Playwright report	2026-11-10T17:48:49.9901541Z Uploaded bytes 1493172224
+e2e	Upload Playwright report	2026-11-10T17:48:50.2302573Z Uploaded bytes 1501560832
+e2e	Upload Playwright report	2026-11-10T17:48:50.3747564Z Uploaded bytes 1509949440
+e2e	Upload Playwright report	2026-11-10T17:48:50.5602093Z Uploaded bytes 1518338048
+e2e	Upload Playwright report	2026-11-10T17:48:50.7840169Z Uploaded bytes 1526726656
+e2e	Upload Playwright report	2026-11-10T17:48:50.9265207Z Uploaded bytes 1535115264
+e2e	Upload Playwright report	2026-11-10T17:48:51.1828878Z Uploaded bytes 1543503872
+e2e	Upload Playwright report	2026-11-10T17:48:51.3166492Z Uploaded bytes 1551892480
+e2e	Upload Playwright report	2026-11-10T17:48:51.5325734Z Uploaded bytes 1560281088
+e2e	Upload Playwright report	2026-11-10T17:48:51.6792087Z Uploaded bytes 1568669696
+e2e	Upload Playwright report	2026-11-10T17:48:51.8985954Z Uploaded bytes 1577058304
+e2e	Upload Playwright report	2026-11-10T17:48:52.0584629Z Uploaded bytes 1585446912
+e2e	Upload Playwright report	2026-11-10T17:48:52.2279272Z Uploaded bytes 1593835520
+e2e	Upload Playwright report	2026-11-10T17:48:52.4973391Z Uploaded bytes 1602224128
+e2e	Upload Playwright report	2026-11-10T17:48:52.5946008Z Uploaded bytes 1610612736
+e2e	Upload Playwright report	2026-11-10T17:48:52.8079869Z Uploaded bytes 1619001344
+e2e	Upload Playwright report	2026-11-10T17:48:52.9574218Z Uploaded bytes 1627389952
+e2e	Upload Playwright report	2026-11-10T17:48:53.2320723Z Uploaded bytes 1635778560
+e2e	Upload Playwright report	2026-11-10T17:48:53.3403954Z Uploaded bytes 1644167168
+e2e	Upload Playwright report	2026-11-10T17:48:53.5779195Z Uploaded bytes 1652555776
+e2e	Upload Playwright report	2026-11-10T17:48:53.7135219Z Uploaded bytes 1660944384
+e2e	Upload Playwright report	2026-11-10T17:48:53.9851326Z Uploaded bytes 1669332992
+e2e	Upload Playwright report	2026-11-10T17:48:54.1415681Z Uploaded bytes 1677721600
+e2e	Upload Playwright report	2026-11-10T17:48:54.3959289Z Uploaded bytes 1686110208
+e2e	Upload Playwright report	2026-11-10T17:48:54.5054031Z Uploaded bytes 1694498816
+e2e	Upload Playwright report	2026-11-10T17:48:54.7406195Z Uploaded bytes 1702887424
+e2e	Upload Playwright report	2026-11-10T17:48:54.8752158Z Uploaded bytes 1711276032
+e2e	Upload Playwright report	2026-11-10T17:48:55.0924385Z Uploaded bytes 1719664640
+e2e	Upload Playwright report	2026-11-10T17:48:55.3351907Z Uploaded bytes 1728053248
+e2e	Upload Playwright report	2026-11-10T17:48:55.5351076Z Uploaded bytes 1736441856
+e2e	Upload Playwright report	2026-11-10T17:48:55.6434249Z Uploaded bytes 1744830464
+e2e	Upload Playwright report	2026-11-10T17:48:55.8569540Z Uploaded bytes 1753219072
+e2e	Upload Playwright report	2026-11-10T17:48:56.0012783Z Uploaded bytes 1761607680
+e2e	Upload Playwright report	2026-11-10T17:48:56.2237168Z Uploaded bytes 1769996288
+e2e	Upload Playwright report	2026-11-10T17:48:56.3772884Z Uploaded bytes 1778384896
+e2e	Upload Playwright report	2026-11-10T17:48:56.6129019Z Uploaded bytes 1786773504
+e2e	Upload Playwright report	2026-11-10T17:48:56.7369285Z Uploaded bytes 1795162112
+e2e	Upload Playwright report	2026-11-10T17:48:56.9742396Z Uploaded bytes 1803550720
+e2e	Upload Playwright report	2026-11-10T17:48:57.1307428Z Uploaded bytes 1811939328
+e2e	Upload Playwright report	2026-11-10T17:48:57.3435281Z Uploaded bytes 1820327936
+e2e	Upload Playwright report	2026-11-10T17:48:57.5322818Z Uploaded bytes 1828716544
+e2e	Upload Playwright report	2026-11-10T17:48:57.6974956Z Uploaded bytes 1837105152
+e2e	Upload Playwright report	2026-11-10T17:48:57.9183267Z Uploaded bytes 1845493760
+e2e	Upload Playwright report	2026-11-10T17:48:58.1252768Z Uploaded bytes 1853882368
+e2e	Upload Playwright report	2026-11-10T17:48:58.2116595Z Uploaded bytes 1862270976
+e2e	Upload Playwright report	2026-11-10T17:48:58.4859156Z Uploaded bytes 1870659584
+e2e	Upload Playwright report	2026-11-10T17:48:58.5815810Z Uploaded bytes 1879048192
+e2e	Upload Playwright report	2026-11-10T17:48:58.7762024Z Uploaded bytes 1887436800
+e2e	Upload Playwright report	2026-11-10T17:48:59.0207636Z Uploaded bytes 1895825408
+e2e	Upload Playwright report	2026-11-10T17:48:59.1443570Z Uploaded bytes 1904214016
+e2e	Upload Playwright report	2026-11-10T17:48:59.2909124Z Uploaded bytes 1912602624
+e2e	Upload Playwright report	2026-11-10T17:48:59.5010469Z Uploaded bytes 1920991232
+e2e	Upload Playwright report	2026-11-10T17:48:59.6380991Z Uploaded bytes 1929379840
+e2e	Upload Playwright report	2026-11-10T17:48:59.8829777Z Uploaded bytes 1937768448
+e2e	Upload Playwright report	2026-11-10T17:49:00.0564143Z Uploaded bytes 1946157056
+e2e	Upload Playwright report	2026-11-10T17:49:00.2785560Z Uploaded bytes 1954545664
+e2e	Upload Playwright report	2026-11-10T17:49:00.4240738Z Uploaded bytes 1962934272
+e2e	Upload Playwright report	2026-11-10T17:49:00.6381087Z Uploaded bytes 1971322880
+e2e	Upload Playwright report	2026-11-10T17:49:00.8003039Z Uploaded bytes 1979711488
+e2e	Upload Playwright report	2026-11-10T17:49:00.9927336Z Uploaded bytes 1988100096
+e2e	Upload Playwright report	2026-11-10T17:49:01.1242809Z Uploaded bytes 1996488704
+e2e	Upload Playwright report	2026-11-10T17:49:01.4103862Z Uploaded bytes 2004877312
+e2e	Upload Playwright report	2026-11-10T17:49:01.4893802Z Uploaded bytes 2013265920
+e2e	Upload Playwright report	2026-11-10T17:49:01.7094593Z Uploaded bytes 2021654528
+e2e	Upload Playwright report	2026-11-10T17:49:01.8310645Z Uploaded bytes 2030043136
+e2e	Upload Playwright report	2026-11-10T17:49:02.0613073Z Uploaded bytes 2038431744
+e2e	Upload Playwright report	2026-11-10T17:49:02.1989548Z Uploaded bytes 2046820352
+e2e	Upload Playwright report	2026-11-10T17:49:02.4375666Z Uploaded bytes 2055208960
+e2e	Upload Playwright report	2026-11-10T17:49:02.5636015Z Uploaded bytes 2063597568
+e2e	Upload Playwright report	2026-11-10T17:49:02.7994336Z Uploaded bytes 2071986176
+e2e	Upload Playwright report	2026-11-10T17:49:02.9251821Z Uploaded bytes 2080374784
+e2e	Upload Playwright report	2026-11-10T17:49:03.1495755Z Uploaded bytes 2088763392
+e2e	Upload Playwright report	2026-11-10T17:49:03.3295080Z Uploaded bytes 2097152000
+e2e	Upload Playwright report	2026-11-10T17:49:03.5671760Z Uploaded bytes 2105540608
+e2e	Upload Playwright report	2026-11-10T17:49:03.6579333Z Uploaded bytes 2113929216
+e2e	Upload Playwright report	2026-11-10T17:49:03.8816589Z Uploaded bytes 2122317824
+e2e	Upload Playwright report	2026-11-10T17:49:04.0551646Z Uploaded bytes 2130706432
+e2e	Upload Playwright report	2026-11-10T17:49:04.2944909Z Uploaded bytes 2139095040
+e2e	Upload Playwright report	2026-11-10T17:49:04.4210391Z Uploaded bytes 2147483648
+e2e	Upload Playwright report	2026-11-10T17:49:04.6489293Z Uploaded bytes 2155872256
+e2e	Upload Playwright report	2026-11-10T17:49:04.8426222Z Uploaded bytes 2164260864
+e2e	Upload Playwright report	2026-11-10T17:49:05.0502283Z Uploaded bytes 2172649472
+e2e	Upload Playwright report	2026-11-10T17:49:05.3109759Z Uploaded bytes 2181038080
+e2e	Upload Playwright report	2026-11-10T17:49:05.5732516Z Uploaded bytes 2189426688
+e2e	Upload Playwright report	2026-11-10T17:49:05.6463939Z Uploaded bytes 2197815296
+e2e	Upload Playwright report	2026-11-10T17:49:05.8381784Z Uploaded bytes 2206203904
+e2e	Upload Playwright report	2026-11-10T17:49:05.9970171Z Uploaded bytes 2214592512
+e2e	Upload Playwright report	2026-11-10T17:49:06.2918964Z Uploaded bytes 2222981120
+e2e	Upload Playwright report	2026-11-10T17:49:06.3935962Z Uploaded bytes 2231369728
+e2e	Upload Playwright report	2026-11-10T17:49:06.6233729Z Uploaded bytes 2239758336
+e2e	Upload Playwright report	2026-11-10T17:49:06.7632292Z Uploaded bytes 2248146944
+e2e	Upload Playwright report	2026-11-10T17:49:07.0155477Z Uploaded bytes 2256535552
+e2e	Upload Playwright report	2026-11-10T17:49:07.1471190Z Uploaded bytes 2264924160
+e2e	Upload Playwright report	2026-11-10T17:49:07.3699207Z Uploaded bytes 2273312768
+e2e	Upload Playwright report	2026-11-10T17:49:07.5184003Z Uploaded bytes 2281701376
+e2e	Upload Playwright report	2026-11-10T17:49:07.7354960Z Uploaded bytes 2290089984
+e2e	Upload Playwright report	2026-11-10T17:49:07.8766106Z Uploaded bytes 2298478592
+e2e	Upload Playwright report	2026-11-10T17:49:08.1104099Z Uploaded bytes 2306867200
+e2e	Upload Playwright report	2026-11-10T17:49:08.2922284Z Uploaded bytes 2315255808
+e2e	Upload Playwright report	2026-11-10T17:49:08.5340687Z Uploaded bytes 2323644416
+e2e	Upload Playwright report	2026-11-10T17:49:08.6355839Z Uploaded bytes 2332033024
+e2e	Upload Playwright report	2026-11-10T17:49:08.8600518Z Uploaded bytes 2340421632
+e2e	Upload Playwright report	2026-11-10T17:49:08.9875534Z Uploaded bytes 2348810240
+e2e	Upload Playwright report	2026-11-10T17:49:09.1899403Z Uploaded bytes 2357198848
+e2e	Upload Playwright report	2026-11-10T17:49:09.3279825Z Uploaded bytes 2365587456
+e2e	Upload Playwright report	2026-11-10T17:49:09.5244397Z Uploaded bytes 2373976064
+e2e	Upload Playwright report	2026-11-10T17:49:09.7197860Z Uploaded bytes 2382364672
+e2e	Upload Playwright report	2026-11-10T17:49:09.8888676Z Uploaded bytes 2390753280
+e2e	Upload Playwright report	2026-11-10T17:49:10.0406742Z Uploaded bytes 2399141888
+e2e	Upload Playwright report	2026-11-10T17:49:10.2609192Z Uploaded bytes 2407530496
+e2e	Upload Playwright report	2026-11-10T17:49:10.4699995Z Uploaded bytes 2415919104
+e2e	Upload Playwright report	2026-11-10T17:49:10.6237793Z Uploaded bytes 2424307712
+e2e	Upload Playwright report	2026-11-10T17:49:10.7683813Z Uploaded bytes 2432696320
+e2e	Upload Playwright report	2026-11-10T17:49:11.0062545Z Uploaded bytes 2441084928
+e2e	Upload Playwright report	2026-11-10T17:49:11.1800566Z Uploaded bytes 2449473536
+e2e	Upload Playwright report	2026-11-10T17:49:11.4395255Z Uploaded bytes 2457862144
+e2e	Upload Playwright report	2026-11-10T17:49:11.5696205Z Uploaded bytes 2466250752
+e2e	Upload Playwright report	2026-11-10T17:49:11.8018376Z Uploaded bytes 2474639360
+e2e	Upload Playwright report	2026-11-10T17:49:11.9059391Z Uploaded bytes 2483027968
+e2e	Upload Playwright report	2026-11-10T17:49:12.1902144Z Uploaded bytes 2491416576
+e2e	Upload Playwright report	2026-11-10T17:49:12.2780514Z Uploaded bytes 2499805184
+e2e	Upload Playwright report	2026-11-10T17:49:12.4490529Z Uploaded bytes 2508193792
+e2e	Upload Playwright report	2026-11-10T17:49:12.6357408Z Uploaded bytes 2516582400
+e2e	Upload Playwright report	2026-11-10T17:49:12.8529732Z Uploaded bytes 2524971008
+e2e	Upload Playwright report	2026-11-10T17:49:12.9836558Z Uploaded bytes 2533359616
+e2e	Upload Playwright report	2026-11-10T17:49:13.2250471Z Uploaded bytes 2541748224
+e2e	Upload Playwright report	2026-11-10T17:49:13.3861003Z Uploaded bytes 2550136832
+e2e	Upload Playwright report	2026-11-10T17:49:13.5630789Z Uploaded bytes 2558525440
+e2e	Upload Playwright report	2026-11-10T17:49:13.7634406Z Uploaded bytes 2566914048
+e2e	Upload Playwright report	2026-11-10T17:49:13.9838079Z Uploaded bytes 2575302656
+e2e	Upload Playwright report	2026-11-10T17:49:14.1088187Z Uploaded bytes 2583691264
+e2e	Upload Playwright report	2026-11-10T17:49:14.3547482Z Uploaded bytes 2592079872
+e2e	Upload Playwright report	2026-11-10T17:49:14.5404867Z Uploaded bytes 2600468480
+e2e	Upload Playwright report	2026-11-10T17:49:14.8899709Z Uploaded bytes 2608857088
+e2e	Upload Playwright report	2026-11-10T17:49:14.8988557Z Uploaded bytes 2617245696
+e2e	Upload Playwright report	2026-11-10T17:49:15.3522558Z Uploaded bytes 2625634304
+e2e	Upload Playwright report	2026-11-10T17:49:15.5223402Z Uploaded bytes 2634022912
+e2e	Upload Playwright report	2026-11-10T17:49:15.7426999Z Uploaded bytes 2642411520
+e2e	Upload Playwright report	2026-11-10T17:49:15.8444963Z Uploaded bytes 2650800128
+e2e	Upload Playwright report	2026-11-10T17:49:16.1179154Z Uploaded bytes 2659188736
+e2e	Upload Playwright report	2026-11-10T17:49:16.2599055Z Uploaded bytes 2667577344
+e2e	Upload Playwright report	2026-11-10T17:49:16.4944431Z Uploaded bytes 2675965952
+e2e	Upload Playwright report	2026-11-10T17:49:16.5327913Z Uploaded bytes 2684354560
+e2e	Upload Playwright report	2026-11-10T17:49:16.7206662Z Uploaded bytes 2692743168
+e2e	Upload Playwright report	2026-11-10T17:49:16.8234483Z Uploaded bytes 2695926507
+e2e	Upload Playwright report	2026-11-10T17:49:16.8900016Z Finished uploading artifact content to blob storage!
+e2e	Upload Playwright report	2026-11-10T17:49:16.8902566Z SHA256 digest of uploaded artifact zip is cfae62e5fea0e4737e75b9088a7594201393311e2df19e8cd3f873879eb98aaf
+e2e	Upload Playwright report	2026-11-10T17:49:16.8904074Z Finalizing artifact upload
+e2e	Upload Playwright report	2026-11-10T17:49:17.4171096Z Artifact playwright-report.zip successfully finalized. Artifact ID 13787474777
+e2e	Upload Playwright report	2026-11-10T17:49:17.4171937Z Artifact playwright-report has been successfully uploaded! Final size is 2695926507 bytes. Artifact ID is 13787474777
+e2e	Upload Playwright report	2026-11-10T17:49:17.4178257Z Artifact download URL: https://github.com/miguelangaranocurrents/grafana-aaeb36/actions/runs/42449635845/artifacts/13787474777
+e2e	Upload test results	﻿2026-11-10T17:49:17.4550531Z ##[group]Run actions/upload-artifact@v4
+e2e	Upload test results	2026-11-10T17:49:17.4550732Z with:
+e2e	Upload test results	2026-11-10T17:49:17.4550852Z   name: test-results
+e2e	Upload test results	2026-11-10T17:49:17.4550981Z   path: test-results.json
+e2e	Upload test results	2026-11-10T17:49:17.4551115Z   retention-days: 30
+e2e	Upload test results	2026-11-10T17:49:17.4551240Z   if-no-files-found: warn
+e2e	Upload test results	2026-11-10T17:49:17.4551372Z   compression-level: 6
+e2e	Upload test results	2026-11-10T17:49:17.4551492Z   overwrite: false
+e2e	Upload test results	2026-11-10T17:49:17.4551612Z   include-hidden-files: false
+e2e	Upload test results	2026-11-10T17:49:17.4551745Z env:
+e2e	Upload test results	2026-11-10T17:49:17.4551898Z   TMPDIR: /home/runner/work/grafana-aaeb36/grafana-aaeb36/../tmp
+e2e	Upload test results	2026-11-10T17:49:17.4552096Z   NX_SOCKET_DIR: /tmp/nx
+e2e	Upload test results	2026-11-10T17:49:17.4552219Z   GOTOOLCHAIN: local
+e2e	Upload test results	2026-11-10T17:49:17.4552338Z ##[endgroup]
+e2e	Upload test results	2026-11-10T17:49:17.5889130Z (node:45304) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+e2e	Upload test results	2026-11-10T17:49:17.5890016Z (Use `node --trace-deprecation ...` to show where the warning was created)
+e2e	Upload test results	2026-11-10T17:49:17.5923779Z With the provided path, there will be 1 file uploaded
+e2e	Upload test results	2026-11-10T17:49:17.5927729Z Artifact name is valid!
+e2e	Upload test results	2026-11-10T17:49:17.5928376Z Root directory input is valid!
+e2e	Upload test results	2026-11-10T17:49:17.9320349Z Beginning upload of artifact content to blob storage
+e2e	Upload test results	2026-11-10T17:49:18.0852834Z (node:45304) [DEP0169] DeprecationWarning: `url.parse()` behavior is not standardized and prone to errors that have security implications. Use the WHATWG URL API instead. CVEs are not issued for `url.parse()` vulnerabilities.
+e2e	Upload test results	2026-11-10T17:49:18.7123265Z Uploaded bytes 1530602
+e2e	Upload test results	2026-11-10T17:49:18.7734331Z Finished uploading artifact content to blob storage!
+e2e	Upload test results	2026-11-10T17:49:18.7734934Z SHA256 digest of uploaded artifact zip is 50fb71bd0d9289561264b722ff86d5d3ef1c6186744972fd68aeebb79530aa5b
+e2e	Upload test results	2026-11-10T17:49:18.7736253Z Finalizing artifact upload
+e2e	Upload test results	2026-11-10T17:49:19.1930909Z Artifact test-results.zip successfully finalized. Artifact ID 13787359980
+e2e	Upload test results	2026-11-10T17:49:19.1932172Z Artifact test-results has been successfully uploaded! Final size is 1530602 bytes. Artifact ID is 13787359980
+e2e	Upload test results	2026-11-10T17:49:19.1938071Z Artifact download URL: https://github.com/miguelangaranocurrents/grafana-aaeb36/actions/runs/42449635845/artifacts/13787359980
+e2e	Post Install Playwright browsers	﻿2026-11-10T17:49:19.2205352Z Post job cleanup.
+e2e	Post Install Playwright browsers	2026-11-10T17:49:19.2219792Z ##[start-action display=Cache Playwright browsers;id=__7d563ff2-1ffe-4e55-89a4-a9a9d224dffa.__actions_cache]
+e2e	Post Install Playwright browsers	2026-11-10T17:49:19.2221345Z ##[end-action id=__7d563ff2-1ffe-4e55-89a4-a9a9d224dffa.__actions_cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+e2e	Post Install yarn dependencies	﻿2026-11-10T17:49:19.2308561Z Post job cleanup.
+e2e	Post Install yarn dependencies	2026-11-10T17:49:19.2311241Z ##[start-action display=Restore global npm cache folder;id=__7504312c-dbd3-4b4a-8eb0-42e74b550c6a.npm-global-cache]
+e2e	Post Install yarn dependencies	2026-11-10T17:49:19.2312636Z ##[end-action id=__7504312c-dbd3-4b4a-8eb0-42e74b550c6a.npm-global-cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+e2e	Post Install yarn dependencies	2026-11-10T17:49:19.2313720Z ##[start-action display=Restore yarn cache;id=__7504312c-dbd3-4b4a-8eb0-42e74b550c6a.yarn-download-cache]
+e2e	Post Install yarn dependencies	2026-11-10T17:49:19.2314850Z ##[end-action id=__7504312c-dbd3-4b4a-8eb0-42e74b550c6a.yarn-download-cache;outcome=skipped;conclusion=skipped;duration_ms=0]
+e2e	Post Set up Node.js	﻿2026-11-10T17:49:19.2348246Z Post job cleanup.
+e2e	Post Set up Node.js	2026-11-10T17:49:19.2373033Z ##[start-action display=Run actions/setup-node@v6;id=__6ef05aad-c2df-4d9a-8d32-e8aa43ea1456.__actions_setup-node]
+e2e	Post Set up Node.js	2026-11-10T17:49:19.2374400Z ##[end-action id=__6ef05aad-c2df-4d9a-8d32-e8aa43ea1456.__actions_setup-node;outcome=skipped;conclusion=skipped;duration_ms=0]
+e2e	Post Run actions/checkout@v6	﻿2026-11-10T17:49:19.2430696Z Post job cleanup.
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3125885Z [command]/usr/bin/git version
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3165590Z git version 2.56.0
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3195946Z Temporarily overriding HOME='/home/runner/work/_temp/7cd38f5a-f79d-4992-8f0a-1675b2e9f79c' before making global git config changes
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3197120Z Adding repository directory to the temporary git global config as a safe directory
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3200600Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/grafana-aaeb36/grafana-aaeb36
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3240147Z Removing SSH command configuration
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3246346Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3307414Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3628567Z Removing HTTP extra header
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3633949Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3683706Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3939142Z Removing includeIf entries pointing to credentials config files
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3945496Z [command]/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+e2e	Post Run actions/checkout@v6	2026-11-10T17:49:19.3988553Z [command]/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+e2e	Complete job	﻿2026-11-10T17:49:19.4456066Z Cleaning up orphan processes
+e2e	Complete job	2026-11-10T17:49:19.4924233Z Terminate orphan process: pid (27131) (grafana)
+e2e	Complete job	2026-11-10T17:49:19.4946904Z Terminate orphan process: pid (27133) (grafana)
+e2e	Complete job	2026-11-10T17:49:19.5931895Z ##[warning]Node.js 20 is deprecated. The following actions target Node.js 20 but are being forced to run on Node.js 24: actions/upload-artifact@v4. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
